@@ -678,6 +678,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -688,6 +692,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-4 {
@@ -758,16 +766,12 @@ video {
   height: 380px;
 }
 
-.h-\[700px\] {
-  height: 700px;
+.h-\[600px\] {
+  height: 600px;
 }
 
 .h-\[70px\] {
   height: 70px;
-}
-
-.h-\[600px\] {
-  height: 600px;
 }
 
 .max-h-0 {
@@ -1144,7 +1148,7 @@ video {
 }
 
 .hero {
-  background-image: url("../images/hero.webp");
+  background-image: url("../images/hero-bg.webp");
 }
 
 .step1 {

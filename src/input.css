@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .hero {
-  background-image: url("../images/hero.webp");
+  background-image: url("../images/hero-bg.webp");
 }
 .step1 {
   background-image: url("../images/start-step/1.webp");
