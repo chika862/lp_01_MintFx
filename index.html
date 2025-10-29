@@ -25,97 +25,106 @@
     <meta name="keywords" content="必要であれば" />
   </head>
   <body>
-    <main>
-      <div class="hero bg-cover bg-center h-[700px] lg:h-[790px]">
-        <!-- ===============================
+    <!-- ===============================
     ヘッダー
   =============================== -->
-        <header class="header">
-          <div class="flex items-center justify-between">
-            <h1 class="p-0 m-0 h-10 md:h-12">
-              <img
-                src="images/logo.svg"
-                alt="MINT TRADING"
-                class="h-10 md:h-12 object-contain"
-              />
-            </h1>
-            <div id="navArea">
-              <nav>
-                <div class="inner">
-                  <ul>
-                    <li><a href="#" class="p-3 block">トップページ</a></li>
+    <header
+      class="header fixed top-0 left-0 w-full bg-black/70 backdrop-blur-sm z-50 h-20"
+    >
+      <div class="flex items-center justify-between">
+        <h1 class="my-auto md:h-12">
+          <img
+            src="images/logo.svg"
+            alt="MINT TRADING"
+            class="object-contain"
+          />
+        </h1>
+        <div id="navArea">
+          <nav>
+            <div class="inner">
+              <ul>
+                <li><a href="#" class="p-3 block">トップページ</a></li>
 
-                    <!-- 会社概要 -->
-                    <li class="relative">
-                      <button
-                        class="submenu-btn flex justify-between w-full items-center p-3"
+                <!-- 会社概要 -->
+                <li class="relative list-text">
+                  <button
+                    class="submenu-btn flex justify-between w-full items-center p-3"
+                  >
+                    会社概要
+                    <i
+                      class="fa-solid fa-chevron-down ml-2 transition-transform duration-300"
+                    ></i>
+                  </button>
+                  <ul
+                    class="submenu max-h-0 overflow-hidden transition-all duration-300 bg-gray-100 mt-2 rounded border-t border-transparent"
+                  >
+                    <li>
+                      <a href="#" class="block p-3"
+                        ><span class="pl-4">MINT TRADINGとは?</span></a
                       >
-                        会社概要
-                        <i
-                          class="fa-solid fa-chevron-down ml-2 transition-transform duration-300"
-                        ></i>
-                      </button>
-                      <ul
-                        class="submenu max-h-0 overflow-hidden transition-all duration-300 bg-gray-100 mt-2 rounded border-t border-transparent"
-                      >
-                        <li>
-                          <a href="#" class="block p-3 ml-4"
-                            >MINT TRADINGとは?</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#" class="block p-3 ml-4">ライセンス</a>
-                        </li>
-                      </ul>
                     </li>
-
-                    <!-- トレード -->
-                    <li class="relative">
-                      <button
-                        class="submenu-btn flex justify-between w-full items-center p-3"
+                    <li>
+                      <a href="#" class="block p-3"
+                        ><span class="pl-4">ライセンス</span></a
                       >
-                        トレード
-                        <i
-                          class="fa-solid fa-chevron-down ml-2 transition-transform duration-300"
-                        ></i>
-                      </button>
-                      <ul
-                        class="submenu max-h-0 overflow-hidden transition-all duration-300 bg-gray-100 mt-2 rounded border-t border-transparent"
-                      >
-                        <li>
-                          <a href="#" class="block p-3 ml-4">口座タイプ</a>
-                        </li>
-                        <li>
-                          <a href="#" class="block p-3 ml-4">入出金方法</a>
-                        </li>
-                        <li>
-                          <a href="#" class="block p-3 ml-4"
-                            >プラットフォーム</a
-                          >
-                        </li>
-                      </ul>
                     </li>
-
-                    <li><a href="#" class="p-3 block">アフィリエイト</a></li>
-                    <li><a href="#" class="p-3 block">キャンペーン</a></li>
-                    <li><a href="#" class="p-3 block">口座開設(無料)</a></li>
-                    <li><a href="#" class="p-3 block">ログイン</a></li>
                   </ul>
-                </div>
-              </nav>
+                </li>
 
-              <div
-                class="toggle_btn flex flex-col justify-between w-8 h-10 cursor-pointer"
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+                <!-- トレード -->
+                <li class="relative list-text">
+                  <button
+                    class="submenu-btn flex justify-between w-full items-center p-3"
+                  >
+                    トレード
+                    <i
+                      class="fa-solid fa-chevron-down ml-2 transition-transform duration-300"
+                    ></i>
+                  </button>
+                  <ul
+                    class="submenu max-h-0 overflow-hidden transition-all duration-300 bg-gray-100 mt-2 rounded border-t border-transparent"
+                  >
+                    <li>
+                      <a href="#" class="block p-3"
+                        ><span class="pl-4">口座タイプ</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block p-3"
+                        ><span class="pl-4">入出金方法</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block p-3"
+                        ><span class="pl-4">プラットフォーム</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
 
-              <div id="mask"></div>
+                <li><a href="#" class="p-3 block">アフィリエイト</a></li>
+                <li><a href="#" class="p-3 block">キャンペーン</a></li>
+                <li><a href="#" class="p-3 block">口座開設(無料)</a></li>
+                <li><a href="#" class="p-3 block">ログイン</a></li>
+              </ul>
             </div>
+          </nav>
+
+          <div
+            class="toggle_btn flex flex-col justify-between w-8 h-10 cursor-pointer"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-        </header>
+        </div>
+      </div>
+    </header>
+    <!-- ===============================
+        contents
+        =============================== -->
+    <main>
+      <div class="hero bg-cover bg-center h-[700px] lg:h-[790px]">
         <!-- ===============================
         FV
         =============================== -->
@@ -719,6 +728,8 @@
     <footer class="bg-accent text-white">
       <p>&copy; 2025 MINT TRADING</p>
     </footer>
+    <!-- nav mask-->
+    <div id="mask"></div>
     <!-- ===============================
       JS
   =============================== -->
@@ -744,6 +755,7 @@
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
+        const body = document.body;
         const nav = document.getElementById("navArea");
         const btn = document.querySelector(".toggle_btn");
         const mask = document.getElementById("mask");
@@ -751,10 +763,10 @@
 
         // メインメニュー開閉
         btn.addEventListener("click", () => {
-          nav.classList.toggle(openClass);
+          body.classList.toggle(openClass);
         });
         mask.addEventListener("click", () => {
-          nav.classList.remove(openClass);
+          body.classList.remove(openClass);
         });
 
         // 下層メニュー（アコーディオン）

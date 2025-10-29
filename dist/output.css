@@ -604,6 +604,10 @@ video {
   position: static;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -616,6 +620,10 @@ video {
   position: sticky;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .left-4 {
   left: 1rem;
 }
@@ -624,17 +632,26 @@ video {
   right: 1rem;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-1\/2 {
   top: 50%;
 }
 
-.m-0 {
-  margin: 0px;
+.z-50 {
+  z-index: 50;
 }
 
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mx-auto {
@@ -657,21 +674,12 @@ video {
   margin-bottom: auto;
 }
 
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
 
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
 }
 
 .mt-1 {
@@ -706,6 +714,10 @@ video {
   display: grid;
 }
 
+.contents {
+  display: contents;
+}
+
 .hidden {
   display: none;
 }
@@ -716,6 +728,10 @@ video {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-\[100px\] {
@@ -730,6 +746,10 @@ video {
   height: 200px;
 }
 
+.h-\[250px\] {
+  height: 250px;
+}
+
 .h-\[380px\] {
   height: 380px;
 }
@@ -742,14 +762,6 @@ video {
   height: 70px;
 }
 
-.h-\[250px\] {
-  height: 250px;
-}
-
-.h-auto {
-  height: auto;
-}
-
 .max-h-0 {
   max-height: 0px;
 }
@@ -760,6 +772,10 @@ video {
 
 .w-\[100px\] {
   width: 100px;
+}
+
+.w-\[20px\] {
+  width: 20px;
 }
 
 .w-\[300px\] {
@@ -776,30 +792,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[150px\] {
-  width: 150px;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
-.w-\[50px\] {
-  width: 50px;
-}
-
-.w-\[15px\] {
-  width: 15px;
-}
-
-.w-\[20px\] {
-  width: 20px;
-}
-
-.w-\[250px\] {
-  width: 250px;
 }
 
 .-translate-y-1\/2 {
@@ -936,6 +928,10 @@ video {
   background-color: rgb(245 245 247 / var(--tw-bg-opacity));
 }
 
+.bg-black\/70 {
+  background-color: rgb(0 0 0 / 0.7);
+}
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -962,10 +958,6 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .p-2 {
@@ -1016,6 +1008,10 @@ video {
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .pt-2 {
@@ -1108,6 +1104,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1192,20 +1193,15 @@ video {
 .header-inner {
   display: flex;
   align-items: center;
-  /* 縦方向センター */
   justify-content: space-between;
   padding: 0 16px;
-  /* 横余白 */
 }
 
 .header h1 img {
   position: relative;
   top: 30px;
-  /* toggle_btnと同じ */
   left: 30px;
-  /* 左寄せ */
   height: 30px;
-  /* 高さもtoggle_btnに合わせる */
 }
 
 /*============
@@ -1216,6 +1212,7 @@ nav
 nav {
   display: block;
   position: fixed;
+  height: 100vh;
   top: 0;
   left: -300px;
   bottom: 0;
@@ -1247,12 +1244,12 @@ nav .inner ul {
 nav .inner ul li {
   position: relative;
   margin: 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #333333;
 }
 
 nav .inner ul li a {
   display: block;
-  color: #333;
+  color: #333333;
   font-size: 14px;
   padding: 1em;
   text-decoration: none;
@@ -1260,7 +1257,15 @@ nav .inner ul li a {
 }
 
 nav .inner ul li a:hover {
-  background: #e4e4e4;
+  background: #f0f0f0;
+}
+
+.list-text {
+  color: #333333;
+}
+
+.list-text:hover {
+  background: #f0f0f0;
 }
 
 @media screen and (max-width: 767px) {
@@ -1326,21 +1331,21 @@ nav .inner ul li a:hover {
 =============*/
 
 #mask {
-  display: none;
-  transition: all 0.5s;
-}
-
-.open #mask {
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: #000;
-  opacity: 0.8;
+  opacity: 0;
+  pointer-events: none;
   z-index: 2;
-  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+body.open #mask {
+  opacity: 0.7;
+  pointer-events: auto;
 }
 
 .hover\:-translate-y-1:hover {
