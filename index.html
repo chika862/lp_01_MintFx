@@ -37,10 +37,12 @@
             <nav>
               <div class="inner">
                 <ul>
-                  <li><a href="#">トップページ</a></li>
+                  <li><a href="#" class="p-3 block">トップページ</a></li>
+
+                  <!-- 会社概要 -->
                   <li class="relative">
                     <button
-                      class="submenu-btn flex justify-between w-full items-center"
+                      class="submenu-btn flex justify-between w-full items-center p-3"
                     >
                       会社概要
                       <i
@@ -48,18 +50,40 @@
                       ></i>
                     </button>
                     <ul
-                      class="submenu max-h-0 overflow-hidden transition-all duration-300 bg-gray-700 text-white mt-2 rounded"
+                      class="submenu max-h-0 overflow-hidden transition-all duration-300 bg-gray-100 mt-2 rounded border-t border-transparent"
                     >
-                      <li class="p-2"><a href="#">会社情報</a></li>
-                      <li class="p-2"><a href="#">沿革</a></li>
-                      <li class="p-2"><a href="#">アクセス</a></li>
+                      <li>
+                        <a href="#" class="block p-3 ml-4">MINT TRADINGとは?</a>
+                      </li>
+                      <li><a href="#" class="block p-3 ml-4">ライセンス</a></li>
                     </ul>
                   </li>
-                  <li><a href="#">トレード</a></li>
-                  <li><a href="#">アフィリエイト</a></li>
-                  <li><a href="#">キャンペーン</a></li>
-                  <li><a href="#">口座開設(無料)</a></li>
-                  <li><a href="#">ログイン</a></li>
+
+                  <!-- トレード -->
+                  <li class="relative">
+                    <button
+                      class="submenu-btn flex justify-between w-full items-center p-3"
+                    >
+                      トレード
+                      <i
+                        class="fa-solid fa-chevron-down ml-2 transition-transform duration-300"
+                      ></i>
+                    </button>
+                    <ul
+                      class="submenu max-h-0 overflow-hidden transition-all duration-300 bg-gray-100 mt-2 rounded border-t border-transparent"
+                    >
+                      <li><a href="#" class="block p-3 ml-4">口座タイプ</a></li>
+                      <li><a href="#" class="block p-3 ml-4">入出金方法</a></li>
+                      <li>
+                        <a href="#" class="block p-3 ml-4">プラットフォーム</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#" class="p-3 block">アフィリエイト</a></li>
+                  <li><a href="#" class="p-3 block">キャンペーン</a></li>
+                  <li><a href="#" class="p-3 block">口座開設(無料)</a></li>
+                  <li><a href="#" class="p-3 block">ログイン</a></li>
                 </ul>
               </div>
             </nav>
@@ -232,14 +256,30 @@
         const mask = document.getElementById("mask");
         const openClass = "open";
 
-        // menu open/close
+        // メインメニュー開閉
         btn.addEventListener("click", () => {
           nav.classList.toggle(openClass);
         });
-
-        // mask close
         mask.addEventListener("click", () => {
           nav.classList.remove(openClass);
+        });
+
+        // 下層メニュー（アコーディオン）
+        const submenuBtns = document.querySelectorAll(".submenu-btn");
+
+        submenuBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const submenu = btn.nextElementSibling;
+            const icon = btn.querySelector("i");
+
+            if (submenu.style.maxHeight) {
+              submenu.style.maxHeight = null;
+              icon.classList.remove("rotate-180");
+            } else {
+              submenu.style.maxHeight = submenu.scrollHeight + "px";
+              icon.classList.add("rotate-180");
+            }
+          });
         });
       });
     </script>
