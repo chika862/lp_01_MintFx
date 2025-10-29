@@ -1,6 +1,7 @@
 node_modules/
 
-/dist/
+dist/*
+!dist/output.css
 /public/
 
 .env
