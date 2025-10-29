@@ -33,31 +33,45 @@
           <h1 class="p-2">
             <img src="images/logo.webp" alt="MINT TRADING" />
           </h1>
-          <nav>
-            <button
-              id="menuBtn"
-              type="button"
-              class="fixed top-3 right-4 z-10 flex h-14 w-14 items-center justify-center rounded-md border-none text-white sm:hidden"
-            >
-              <!-- https://fontawesome.com/icons/bars?s=solid&f=classic -->
-              <i id="menuIconBars" class="fa-solid fa-bars fa-2x"></i>
+          <div id="navArea">
+            <nav>
+              <div class="inner">
+                <ul>
+                  <li><a href="#">トップページ</a></li>
+                  <li class="relative">
+                    <button
+                      class="submenu-btn flex justify-between w-full items-center"
+                    >
+                      会社概要
+                      <i
+                        class="fa-solid fa-chevron-down ml-2 transition-transform duration-300"
+                      ></i>
+                    </button>
+                    <ul
+                      class="submenu max-h-0 overflow-hidden transition-all duration-300 bg-gray-700 text-white mt-2 rounded"
+                    >
+                      <li class="p-2"><a href="#">会社情報</a></li>
+                      <li class="p-2"><a href="#">沿革</a></li>
+                      <li class="p-2"><a href="#">アクセス</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">トレード</a></li>
+                  <li><a href="#">アフィリエイト</a></li>
+                  <li><a href="#">キャンペーン</a></li>
+                  <li><a href="#">口座開設(無料)</a></li>
+                  <li><a href="#">ログイン</a></li>
+                </ul>
+              </div>
+            </nav>
 
-              <!-- https://fontawesome.com/icons/xmark?s=solid&f=classic -->
-              <i id="menuIconX" class="fa-solid fa-xmark fa-2x hidden"></i>
-            </button>
-            <ul
-              id="menu"
-              class="fixed top-0 left-0 z-0 flex w-full translate-x-full flex-col bg-gray-800 text-center font-bold text-white transition-all ease-linear sm:static sm:w-full sm:translate-x-0 sm:flex-row sm:place-items-center sm:bg-white sm:text-black"
-            >
-              <li class="p-3"><a href="">トップページ</a></li>
-              <li class="p-3"><a href="">会社概要</a></li>
-              <li class="p-3"><a href="">トレード</a></li>
-              <li class="p-3"><a href="">アフィリエイト</a></li>
-              <li class="p-3"><a href="">キャンペーン</a></li>
-              <li class="p-3"><a href="">口座開設(無料)</a></li>
-              <li class="p-3"><a href="">ログイン</a></li>
-            </ul>
-          </nav>
+            <div class="toggle_btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div id="mask"></div>
+          </div>
         </div>
       </header>
       <!-- ===============================
@@ -212,30 +226,21 @@
       JS
   =============================== -->
     <script>
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
+      document.addEventListener("DOMContentLoaded", () => {
+        const nav = document.getElementById("navArea");
+        const btn = document.querySelector(".toggle_btn");
+        const mask = document.getElementById("mask");
+        const openClass = "open";
 
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-          type: "bullets",
-          clickable: true,
-        },
+        // menu open/close
+        btn.addEventListener("click", () => {
+          nav.classList.toggle(openClass);
+        });
 
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    <script>
-      menuBtn.addEventListener("click", () => {
-        menu.classList.toggle("translate-x-full");
-        menuIconBars.classList.toggle("hidden");
-        menuIconX.classList.toggle("hidden");
+        // mask close
+        mask.addEventListener("click", () => {
+          nav.classList.remove(openClass);
+        });
       });
     </script>
   </body>
