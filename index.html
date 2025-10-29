@@ -7,6 +7,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./dist/output.css" />
     <title>Document</title>
     <meta
@@ -16,124 +24,144 @@
     <meta name="keywords" content="必要であれば" />
   </head>
   <body>
-    <!-- ===============================
+    <section class="hero bg-cover bg-center h-[700px] lg:h-[790px]">
+      <!-- ===============================
       ヘッダー
   =============================== -->
-    <header class="header">
-      <div class="header-inner">
-        <h1 class="logo"><img src="images/logo.png" alt="サイトロゴ" /></h1>
-        <nav class="">
-          <ul>
-            <li><a href="#about">特徴999</a></li>
-            <li><a href="#service">サービス</a></li>
-            <li><a href="#price">料金</a></li>
-            <li><a href="#contact">お問い合わせ</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- ===============================
+      <header class="header">
+        <div class="header-inner">
+          <h1 class="p-2">
+            <img src="images/logo.webp" alt="MINT TRADING" />
+          </h1>
+          <nav>
+            <button
+              id="menuBtn"
+              type="button"
+              class="fixed top-3 right-4 z-10 flex h-14 w-14 items-center justify-center rounded-md border-none text-white sm:hidden"
+            >
+              <!-- https://fontawesome.com/icons/bars?s=solid&f=classic -->
+              <i id="menuIconBars" class="fa-solid fa-bars fa-2x"></i>
+
+              <!-- https://fontawesome.com/icons/xmark?s=solid&f=classic -->
+              <i id="menuIconX" class="fa-solid fa-xmark fa-2x hidden"></i>
+            </button>
+            <ul
+              id="menu"
+              class="fixed top-0 left-0 z-0 flex w-full translate-x-full flex-col bg-gray-800 text-center font-bold text-white transition-all ease-linear sm:static sm:w-full sm:translate-x-0 sm:flex-row sm:place-items-center sm:bg-white sm:text-black"
+            >
+              <li class="p-3"><a href="">トップページ</a></li>
+              <li class="p-3"><a href="">会社概要</a></li>
+              <li class="p-3"><a href="">トレード</a></li>
+              <li class="p-3"><a href="">アフィリエイト</a></li>
+              <li class="p-3"><a href="">キャンペーン</a></li>
+              <li class="p-3"><a href="">口座開設(無料)</a></li>
+              <li class="p-3"><a href="">ログイン</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- ===============================
       FV
   =============================== -->
-    <section class="hero swiper bg-cover bg-center h-[700px] lg:h-[790px]">
-      <div class="swiper-wrapper">
-        <!-- 1枚目-->
-        <div
-          class="swiper-slide mx-auto w-full md:max-w-[1240px] md:px-[340px] p-4"
-        >
-          <h2
-            class="text-white text-3xl md:text-4xl leading-relaxed font-bold mt-[300px] md:mt-auto"
-          >
-            信頼こそが、最大のリターン。<br />透明な取引システムと<br />グローバル基準のセキュリティで<br />あなたの資産を守ります。
-          </h2>
-          <div
-            class="flex flex-col md:flex-row text-center text-white font-bold pt-4 space-y-4"
-          >
-            <a
-              href="#"
-              class="relative flex bg-accent rounded p-2 justify-center items-center"
-              >今すぐ口座開設(無料)<span
-                class="absolute right-4 top-1/2 -translate-y-1/2"
-                >></span
-              ></a
-            >
-            <a
-              href="#"
-              class="relative flex border-2 border-white rounded p-2 justify-center items-center"
-              >詳しく見る<span class="absolute right-4 top-1/2 -translate-y-1/2"
-                >></span
-              ></a
-            >
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper mt-[200px] md:mt-auto">
+          <div class="swiper-slide">
+            <div class="mx-auto w-full md:max-w-[1240px] md:px-[340px] p-4">
+              <h2
+                class="text-white text-3xl md:text-4xl leading-relaxed font-bold"
+              >
+                信頼こそが、最大のリターン。<br />透明な取引システムと<br />グローバル基準のセキュリティで<br />あなたの資産を守ります。
+              </h2>
+              <div
+                class="flex flex-col md:flex-row text-center text-white font-bold pt-4 space-y-4"
+              >
+                <a
+                  href="#"
+                  class="relative flex bg-accent rounded p-2 justify-center items-center"
+                  >今すぐ口座開設(無料)<span
+                    class="absolute right-4 top-1/2 -translate-y-1/2"
+                    >></span
+                  ></a
+                >
+                <a
+                  href="#"
+                  class="relative flex border-2 border-white rounded p-2 justify-center items-center"
+                  >詳しく見る<span
+                    class="absolute right-4 top-1/2 -translate-y-1/2"
+                    >></span
+                  ></a
+                >
+              </div>
+            </div>
           </div>
-        </div>
 
-        <!-- 2枚目-->
-        <div
-          class="swiper-slide mx-auto w-full md:max-w-[1240px] md:px-[340px] p-4"
-        >
-          <h2
-            class="text-white text-3xl md:text-4xl leading-relaxed font-bold mt-[300px] md:mt-auto"
-          >
-            信頼こそが、最大のリターン。<br />透明な取引システムと<br />グローバル基準のセキュリティで<br />あなたの資産を守ります。
-          </h2>
-          <div
-            class="flex flex-col md:flex-row text-center text-white font-bold pt-4 space-y-4"
-          >
-            <a
-              href="#"
-              class="relative flex bg-accent rounded p-2 justify-center items-center"
-              >今すぐ口座開設(無料)<span
-                class="absolute right-4 top-1/2 -translate-y-1/2"
-                >></span
-              ></a
-            >
-            <a
-              href="#"
-              class="relative flex border-2 border-white rounded p-2 justify-center items-center"
-              >詳しく見る<span class="absolute right-4 top-1/2 -translate-y-1/2"
-                >></span
-              ></a
-            >
+          <!-- 2枚目-->
+          <div class="swiper-slide">
+            <div class="mx-auto w-full md:max-w-[1240px] md:px-[340px] p-4">
+              <h2
+                class="text-white text-3xl md:text-4xl leading-relaxed font-bold mt-[300px] md:mt-auto"
+              >
+                2枚目です
+              </h2>
+              <div
+                class="flex flex-col md:flex-row text-center text-white font-bold pt-4 space-y-4"
+              >
+                <a
+                  href="#"
+                  class="relative flex bg-accent rounded p-2 justify-center items-center"
+                  >今すぐ口座開設(無料)<span
+                    class="absolute right-4 top-1/2 -translate-y-1/2"
+                    >></span
+                  ></a
+                >
+                <a
+                  href="#"
+                  class="relative flex border-2 border-white rounded p-2 justify-center items-center"
+                  >詳しく見る<span
+                    class="absolute right-4 top-1/2 -translate-y-1/2"
+                    >></span
+                  ></a
+                >
+              </div>
+            </div>
           </div>
-        </div>
 
-        <!-- 3枚目-->
-        <div
-          class="swiper-slide mx-auto w-full md:max-w-[1240px] md:px-[340px] p-4"
-        >
-          <h2
-            class="text-white text-3xl md:text-4xl leading-relaxed font-bold mt-[300px] md:mt-auto"
-          >
-            信頼こそが、最大のリターン。<br />透明な取引システムと<br />グローバル基準のセキュリティで<br />あなたの資産を守ります。
-          </h2>
-          <div
-            class="flex flex-col md:flex-row text-center text-white font-bold pt-4 space-y-4"
-          >
-            <a
-              href="#"
-              class="relative flex bg-accent rounded p-2 justify-center items-center"
-              >今すぐ口座開設(無料)<span
-                class="absolute right-4 top-1/2 -translate-y-1/2"
-                >></span
-              ></a
-            >
-            <a
-              href="#"
-              class="relative flex border-2 border-white rounded p-2 justify-center items-center"
-              >詳しく見る<span class="absolute right-4 top-1/2 -translate-y-1/2"
-                >></span
-              ></a
-            >
+          <!-- 3枚目-->
+          <div class="swiper-slide">
+            <div class="mx-auto w-full md:max-w-[1240px] md:px-[340px] p-4">
+              <h2
+                class="text-white text-3xl md:text-4xl leading-relaxed font-bold mt-[300px] md:mt-auto"
+              >
+                3枚目です
+              </h2>
+              <div
+                class="flex flex-col md:flex-row text-center text-white font-bold pt-4 space-y-4"
+              >
+                <a
+                  href="#"
+                  class="relative flex bg-accent rounded p-2 justify-center items-center"
+                  >今すぐ口座開設(無料)<span
+                    class="absolute right-4 top-1/2 -translate-y-1/2"
+                    >></span
+                  ></a
+                >
+                <a
+                  href="#"
+                  class="relative flex border-2 border-white rounded p-2 justify-center items-center"
+                  >詳しく見る<span
+                    class="absolute right-4 top-1/2 -translate-y-1/2"
+                    >></span
+                  ></a
+                >
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
         <!-- ページネーション -->
-        <div class="swiper-pagination "></div>
-        <!-- 左ボタン -->
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
 
-        <!-- 右ボタン -->
+        <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
     </section>
@@ -183,22 +211,31 @@
     <!-- ===============================
       JS
   =============================== -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
         loop: true,
-        slidesPerView: 1,
-        autoplay: {
-          delay: 5000,
-        },
+
+        // If we need pagination
         pagination: {
           el: ".swiper-pagination",
+          type: "bullets",
           clickable: true,
         },
-          navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("translate-x-full");
+        menuIconBars.classList.toggle("hidden");
+        menuIconX.classList.toggle("hidden");
       });
     </script>
   </body>

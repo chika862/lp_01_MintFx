@@ -5,13 +5,21 @@
 .hero {
   background-image: url("../images/hero-bg.webp");
 }
-/* スライダーカスタムCSS */
-/* .swiper-pagination-bullet {
-  background-color: white;
-} */
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  width: 20px;
+  height: 20px;
+  background-size: 50% auto;
+}
+.swiper-pagination-bullet {
+  background-color: gray;
+  opacity: 0.5;
+}
 .swiper-pagination-bullet-active {
-  background-color: #ffffff;
+  background-color: white;
+  opacity: 1;
 }
 
 /* スマホ向け */
