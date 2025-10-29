@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- <script src="tailwind.config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Document</title>
+    <meta
+      name="description"
+      content="説明文説明文説明文説明文説明文説明文説明文説明文説明文"
+    />
+    <meta name="keywords" content="必要であれば" />
+  </head>
+  <body>
+    <!-- ===============================
+      ヘッダー
+  =============================== -->
+    <header class="header bg-primary">
+      <div class="header-inner">
+        <h1 class="logo"><img src="images/logo.png" alt="サイトロゴ" /></h1>
+        <nav class="">
+          <ul>
+            <li><a href="#about">特徴999</a></li>
+            <li><a href="#service">サービス</a></li>
+            <li><a href="#price">料金</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="max-w-4xl mx-auto p-6 bg-white">
+      <!-- ===============================
+      メインビジュアル
+  =============================== -->
+      <section class="text-center bg-red-300">
+        <div class="hero-inner">
+          <h2 class="hero-title">あなたの未来を変えるサービス</h2>
+          <p class="hero-text">まずは無料でお試しください！</p>
+          <a href="#contact" class="btn">今すぐ申し込む</a>
+        </div>
+      </section>
+
+      <!-- ===============================
+      メインビジュアル
+  =============================== -->
+      <section id="about" class="about section">
+        <div class="text-center container">
+          <h2 class="section-title">選ばれる理由</h2>
+          <ul class="features">
+            <li>高品質なデザイン</li>
+            <li>スピーディーな納品</li>
+            <li>安心のサポート体制</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===============================
+      メインビジュアル
+  =============================== -->
+      <section id="service" class="service section">
+        <div class="container">
+          <h2 class="section-title">サービス内容</h2>
+          <div class="cards">
+            <div class="card">
+              <img src="images/service1.jpg" alt="" />
+              <h3>Web制作</h3>
+              <p>レスポンシブ対応・SEOもばっちり！</p>
+            </div>
+            <div class="card">
+              <img src="images/service2.jpg" alt="" />
+              <h3>運用サポート</h3>
+              <p>公開後も安心のサポートプランをご用意。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===============================
+      メインビジュアル
+  =============================== -->
+      <section id="price" class="price section">
+        <div class="container">
+          <h2 class="section-title">料金プラン</h2>
+          <div class="plans">
+            <div class="plan">
+              <h3>ライトプラン</h3>
+              <p class="price">¥50,000〜</p>
+              <p>基本的な構成のシンプルLP。</p>
+            </div>
+            <div class="plan">
+              <h3>スタンダードプラン</h3>
+              <p class="price">¥100,000〜</p>
+              <p>デザイン＋アニメーション付きLP。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===============================
+      メインビジュアル
+  =============================== -->
+      <section class="cta">
+        <div class="container">
+          <h2>まずは無料相談から！</h2>
+          <a href="#contact" class="btn btn-large">お問い合わせはこちら</a>
+        </div>
+      </section>
+
+      <!-- ===============================
+      お問い合わせ
+  =============================== -->
+      <section id="contact" class="contact section">
+        <div class="container">
+          <h2 class="section-title">お問い合わせ</h2>
+          <form class="" action="form.php" method="post">
+            <label class="block">
+              お名前
+              <input
+                type="text"
+                name="name"
+                class="w-full mt-1 p-2 border rounded"
+                required
+              />
+            </label>
+
+            <label class="block"
+              >メールアドレス<input
+                type="email"
+                name="email"
+                class="w-full mt-1 p-2 border rounded"
+                required
+            /></label>
+            <label class="block"
+              >お問い合わせ内容<textarea
+                name="message"
+                class="w-full mt-1 p-2 border rounded"
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="">送信</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <!-- ===============================
+      フッター
+  =============================== -->
+    <footer class="text-center">
+      <p>&copy; 2025 ***************** All rights reserved.</p>
+    </footer>
+  </body>
+</html>

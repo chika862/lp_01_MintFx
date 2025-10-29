@@ -1,0 +1,13 @@
+node_modules/
+
+/dist/
+/public/
+
+.env
+
+# OS の自動生成ファイル
+.DS_Store
+Thumbs.db
+
+# Tailwind exe
+tailwindcss-windows-x64.exe
