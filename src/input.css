@@ -29,6 +29,19 @@
     background-position: center bottom;
   }
 }
+.header-inner {
+  display: flex;
+  align-items: center; /* 縦方向センター */
+  justify-content: space-between;
+  padding: 0 16px; /* 横余白 */
+}
+.header h1 img {
+  position: relative;
+  top: 30px; /* toggle_btnと同じ */
+  left: 30px; /* 左寄せ */
+  height: 30px; /* 高さもtoggle_btnに合わせる */
+}
+
 /*============
 ハンバーガーメニュー
 nav
@@ -86,15 +99,11 @@ nav .inner ul li a:hover {
 .toggle_btn
 =============*/
 .toggle_btn {
-  display: block;
   position: fixed;
   top: 30px;
   right: 30px;
   width: 30px;
   height: 30px;
-  transition: all 0.5s;
-  cursor: pointer;
-  z-index: 3;
 }
 .toggle_btn span {
   display: block;

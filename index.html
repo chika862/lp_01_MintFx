@@ -24,14 +24,18 @@
     <meta name="keywords" content="必要であれば" />
   </head>
   <body>
-    <section class="hero bg-cover bg-center h-[700px] lg:h-[790px]">
+    <main class="hero bg-cover bg-center h-[700px] lg:h-[790px]">
       <!-- ===============================
       ヘッダー
   =============================== -->
       <header class="header">
-        <div class="header-inner">
-          <h1 class="p-2">
-            <img src="images/logo.webp" alt="MINT TRADING" />
+        <div class="flex items-center justify-between">
+          <h1 class="p-0 m-0 h-10 md:h-12">
+            <img
+              src="images/logo.svg"
+              alt="MINT TRADING"
+              class="h-10 md:h-12 object-contain"
+            />
           </h1>
           <div id="navArea">
             <nav>
@@ -88,7 +92,9 @@
               </div>
             </nav>
 
-            <div class="toggle_btn">
+            <div
+              class="toggle_btn flex flex-col justify-between w-8 h-10 cursor-pointer"
+            >
               <span></span>
               <span></span>
               <span></span>
@@ -102,20 +108,22 @@
       FV
   =============================== -->
       <div class="swiper mySwiper">
-        <div class="swiper-wrapper mt-[200px] md:mt-auto">
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="mx-auto w-full md:max-w-[1240px] md:px-[340px] p-4">
+            <div
+              class="mx-auto w-full md:max-w-[1240px] md:px-[340px] p-4 mt-[250px]"
+            >
               <h2
-                class="text-white text-3xl md:text-4xl leading-relaxed font-bold"
+                class="text-white text-2xl md:text-4xl leading-relaxed font-bold"
               >
                 信頼こそが、最大のリターン。<br />透明な取引システムと<br />グローバル基準のセキュリティで<br />あなたの資産を守ります。
               </h2>
               <div
-                class="flex flex-col md:flex-row text-center text-white font-bold pt-4 space-y-4"
+                class="flex flex-col md:flex-row text-center text-white font-bold pt-4 pb-8 space-y-4"
               >
                 <a
                   href="#"
-                  class="relative flex bg-accent rounded p-2 justify-center items-center"
+                  class="relative flex bg-accent rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
                   >今すぐ口座開設(無料)<span
                     class="absolute right-4 top-1/2 -translate-y-1/2"
                     >></span
@@ -123,7 +131,7 @@
                 >
                 <a
                   href="#"
-                  class="relative flex border-2 border-white rounded p-2 justify-center items-center"
+                  class="relative flex border-2 border-white rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
                   >詳しく見る<span
                     class="absolute right-4 top-1/2 -translate-y-1/2"
                     >></span
@@ -135,9 +143,11 @@
 
           <!-- 2枚目-->
           <div class="swiper-slide">
-            <div class="mx-auto w-full md:max-w-[1240px] md:px-[340px] p-4">
+            <div
+              class="mx-auto w-full md:max-w-[1240px] md:px-[340px] p-4 mt-[200px]"
+            >
               <h2
-                class="text-white text-3xl md:text-4xl leading-relaxed font-bold mt-[300px] md:mt-auto"
+                class="text-white text-3xl md:text-4xl leading-relaxed font-bold"
               >
                 2枚目です
               </h2>
@@ -146,7 +156,7 @@
               >
                 <a
                   href="#"
-                  class="relative flex bg-accent rounded p-2 justify-center items-center"
+                  class="relative flex bg-accent rounded p-2 justify-center items-center hover:opacity-75 transition-transform duration-300"
                   >今すぐ口座開設(無料)<span
                     class="absolute right-4 top-1/2 -translate-y-1/2"
                     >></span
@@ -166,9 +176,11 @@
 
           <!-- 3枚目-->
           <div class="swiper-slide">
-            <div class="mx-auto w-full md:max-w-[1240px] md:px-[340px] p-4">
+            <div
+              class="mx-auto w-full md:max-w-[1240px] md:px-[340px] p-4 mt-[200px]"
+            >
               <h2
-                class="text-white text-3xl md:text-4xl leading-relaxed font-bold mt-[300px] md:mt-auto"
+                class="text-white text-3xl md:text-4xl leading-relaxed font-bold"
               >
                 3枚目です
               </h2>
@@ -177,7 +189,7 @@
               >
                 <a
                   href="#"
-                  class="relative flex bg-accent rounded p-2 justify-center items-center"
+                  class="relative flex bg-accent rounded p-2 justify-center items-center hover:opacity-75 transition-transform duration-300"
                   >今すぐ口座開設(無料)<span
                     class="absolute right-4 top-1/2 -translate-y-1/2"
                     >></span
@@ -202,7 +214,11 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    </section>
+    </main>
+
+    <!-- ===============================
+      MINT TRADINGの始め方
+  =============================== -->
 
     <!-- ===============================
       お問い合わせ
@@ -249,6 +265,26 @@
     <!-- ===============================
       JS
   =============================== -->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const nav = document.getElementById("navArea");
