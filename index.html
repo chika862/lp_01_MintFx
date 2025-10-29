@@ -25,15 +25,6 @@
     <meta name="keywords" content="必要であれば" />
   </head>
   <body>
-    <script>
-      const password = "mint2525";
-      const userInput = prompt("パスワードを入力してください");
-
-      if (userInput !== password) {
-        alert("パスワードが違います");
-      }
-    </script>
-
     <main>
       <div class="hero bg-cover bg-center h-[700px] lg:h-[790px]">
         <!-- ===============================
@@ -241,12 +232,12 @@
       MINT TRADINGの始め方
   =============================== -->
       <section class="bg-accent text-white py-6">
-        <h2 class="text-center text-white font-bold text-2xl pt-2 pb-6">
+        <h2 class="text-center text-white font-bold text-2xl pt-2 pb-8">
           最短1分で登録完了!!<br class="md:hidden" />MINT TRADINGの始め方
         </h2>
-        <div class="flex flex-col px-8 md:flex-row space-y-4 md:space-x-4">
+        <div class="flex flex-col px-8 md:flex-row space-y-6 md:space-x-4">
           <!-- STEP1 -->
-          <div class="bg-blue-800 rounded-xl p-3">
+          <div class="step1 rounded-xl p-3">
             <p>STEP1</p>
             <h3 class="font-semibold text-xl">フォーム入力</h3>
             <div class="h-[100px]"></div>
@@ -255,7 +246,7 @@
             </p>
           </div>
           <!-- STEP2 -->
-          <div class="bg-blue-800 rounded-xl p-3">
+          <div class="step2 rounded-xl p-3">
             <p>STEP2</p>
             <h3 class="font-semibold text-xl">必要書類アップロード</h3>
             <div class="h-[100px]"></div>
@@ -264,7 +255,7 @@
             </p>
           </div>
           <!-- STEP3 -->
-          <div class="bg-blue-800 rounded-xl p-3">
+          <div class="step3 rounded-xl p-3">
             <p>STEP3</p>
             <h3 class="font-semibold text-xl">口座開設完了</h3>
             <div class="h-[100px]"></div>
@@ -286,7 +277,9 @@
       MINT TRADINGが選ばれる理由
   =============================== -->
       <section class="py-6 text-primary text-center px-8">
-        <h2 class="font-bold text-2xl pt-2 pb-6">MINT TRADINGが選ばれる理由</h2>
+        <h2 class="font-bold text-2xl pt-2 pb-6">
+          MINT TRADINGが<br class="md:hidden" />選ばれる理由
+        </h2>
         <ul class="flex flex-col md:flex-row space-y-4 md:space-x-4">
           <!-- 1 -->
           <li>
@@ -390,7 +383,7 @@
       <!-- ===============================
       取引種類一覧をご確認ください。
   =============================== -->
-      <section class="pt-6 -pb-6 px-5 text-primary bg-background text-center">
+      <section class="py-6 px-5 text-secondary bg-background text-center">
         <div class="flex flex-col md:flex-row">
           <h2 class="font-bold text-2xl pt-2 pb-6 d-block w-full">
             取引種類一覧をご確認ください。
@@ -423,7 +416,7 @@
               <img
                 src="images/trade-list/1.webp"
                 alt="EUR/USD"
-                class="w-full h-[160px] object-cover"
+                class="w-full h-[160px] object-cover rounded-xl"
               />
               <h3 class="font-bold text-accent text-xl py-4">
                 外国為替(FX)取引
@@ -437,7 +430,7 @@
               <img
                 src="images/trade-list/2.webp"
                 alt="EUR/USD"
-                class="w-full h-[160px] object-cover"
+                class="w-full h-[160px] object-cover rounded-xl"
               />
               <h3 class="font-bold text-accent text-xl py-4">金属取引</h3>
               <p>
@@ -452,7 +445,7 @@
               <img
                 src="images/trade-list/3.webp"
                 alt="EUR/USD"
-                class="w-full h-[160px] object-cover"
+                class="w-full h-[160px] object-cover rounded-xl"
               />
               <h3 class="font-bold text-accent text-xl py-4">株式取引</h3>
               <p>
@@ -464,7 +457,7 @@
               <img
                 src="images/trade-list/4.webp"
                 alt="EUR/USD"
-                class="w-full h-[160px] object-cover"
+                class="w-full h-[160px] object-cover rounded-xl"
               />
               <h3 class="font-bold text-accent text-xl py-4">エネルギー取引</h3>
               <p>
@@ -479,7 +472,7 @@
               <img
                 src="images/trade-list/5.webp"
                 alt="EUR/USD"
-                class="w-full h-[160px] object-cover"
+                class="w-full h-[160px] object-cover rounded-xl"
               />
               <h3 class="font-bold text-accent text-xl py-4">先物取引</h3>
               <p>
@@ -491,7 +484,7 @@
               <img
                 src="images/trade-list/6.webp"
                 alt="EUR/USD"
-                class="w-full h-[160px] object-cover"
+                class="w-full h-[160px] object-cover rounded-xl"
               />
               <h3 class="font-bold text-accent text-xl py-4">仮想通貨取引</h3>
               <p>
@@ -506,7 +499,7 @@
               <img
                 src="images/trade-list/7.webp"
                 alt="EUR/USD"
-                class="w-full h-[160px] object-cover"
+                class="w-full h-[160px] object-cover rounded-xl"
               />
               <h3 class="font-bold text-accent text-xl py-4">
                 インデックス取引
@@ -578,7 +571,7 @@
               </div>
               <a
                 href="#"
-                class="pointer-events-none relative flex mx-12 mt-4 border-2 border-white text-white font-bold rounded-xl p-2 justify-center items-center"
+                class="relative flex mx-12 mt-4 border-2 border-white text-white font-bold rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
                 >詳しく見る<span
                   class="absolute right-4 top-1/2 -translate-y-1/2"
                   >></span
@@ -589,49 +582,142 @@
         </div>
       </section>
 
+      <!-- ===============================
+      世界市場をリードするブローカー
+  =============================== -->
+      <section class="py-6 px-8 text-secondary text-center">
+        <h2 class="font-bold text-accent text-2xl pt-2 pb-6">
+          世界市場を<br class="md:hidden" />リードするブローカー
+        </h2>
+        <p>
+          MINT
+          TRADINGが選ばれる理由をご確認ください。オンライントレードの成功への旅を始めましょう。
+        </p>
+        <ul class="flex flex-col pt-8 md:flex-row space-y-8 md:space-x-4">
+          <!-- 1 -->
+          <li>
+            <div class="w-full flex flex-col">
+              <img
+                src="images/leading/1.webp"
+                alt="セキュリティのイメージ画像"
+                class="w-full h-[200px] object-cover rounded-xl"
+              />
+              <h3 class="font-bold text-accent text-xl py-4">
+                外国為替(FX)取引
+              </h3>
+              <p>
+                取引の定番メジャー通貨から、マイナー・エキゾチック通貨まで安心の環境で快適に取引いただけます。
+              </p>
+            </div>
+          </li>
+          <!-- 2 -->
+          <li class="px-5">
+            <div class="w-full flex flex-col">
+              <img
+                src="images/leading/2.webp"
+                alt="高水準の安全性を確保"
+                class="w-full h-[200px] object-cover rounded-xl"
+              />
+              <h3 class="font-bold text-accent text-xl py-4">
+                外国為替(FX)取引
+              </h3>
+              <p>
+                取引の定番メジャー通貨から、マイナー・エキゾチック通貨まで安心の環境で快適に取引いただけます。
+              </p>
+            </div>
+          </li>
+          <!-- 3 -->
+          <li class="px-5">
+            <div class="w-full flex flex-col">
+              <img
+                src="images/leading/3.webp"
+                alt="高水準の安全性を確保"
+                class="w-full h-[200px] object-cover rounded-xl"
+              />
+              <h3 class="font-bold text-accent text-xl py-4">
+                外国為替(FX)取引
+              </h3>
+              <p>
+                取引の定番メジャー通貨から、マイナー・エキゾチック通貨まで安心の環境で快適に取引いただけます。
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div
+          class="flex flex-col md:flex-row text-center text-white font-bold pt-6 space-y-4"
+        >
+          <a
+            href="#"
+            class="relative flex bg-accent rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
+            >今すぐ口座開設(無料)<span
+              class="absolute right-4 top-1/2 -translate-y-1/2"
+              >></span
+            ></a
+          >
+          <a
+            href="#"
+            class="relative flex border-2 border-accent text-accent rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
+            >詳しく見る<span class="absolute right-4 top-1/2 -translate-y-1/2"
+              >></span
+            ></a
+          >
+        </div>
+      </section>
+
+      <!-- ===============================
+      入出金方法
+  =============================== -->
+      <section
+        class="md:deposit py-6 px-8 bg-background text-secondary text-center"
+      >
+        <h2 class="font-bold text-primary text-2xl pt-2 pb-6">入出金方法</h2>
+        <p>
+          お客様の資金の安全はMINT
+          TRADINGの最優先事項です。いつでもどこでも、簡単かつスピーディーに入出金することが可能です。
+        </p>
+        <img
+          src="images/deposit/bg.webp"
+          alt="セキュリティのイメージ画像"
+          class="w-full h-[250px] object-cover py-5 md:hidden"
+        />
+        <ul class="text-center mx-auto text-xl my-6 space-y-2">
+          <li class="flex">
+            <img src="images/deposit/check.svg" class="w-[20px] my-auto mx-2" />
+            <p class="text-accent font-bold text-left">多彩な入出金方法</p>
+          </li>
+          <li class="flex">
+            <img src="images/deposit/check.svg" class="w-[20px] my-auto mx-2" />
+            <p class="text-accent font-bold text-left">スピーディーに着金</p>
+          </li>
+          <li class="flex">
+            <img src="images/deposit/check.svg" class="w-[20px] my-auto mx-2" />
+            <p class="text-accent font-bold text-left">分離資金で安全確保</p>
+          </li>
+          <li class="flex">
+            <img src="images/deposit/check.svg" class="w-[20px] my-auto mx-2" />
+            <p class="text-accent font-bold text-left">安全なお手続き</p>
+          </li>
+          <li class="flex">
+            <img src="images/deposit/check.svg" class="w-[20px] my-auto mx-2" />
+            <p class="text-accent font-bold text-left">入出金手数料無料</p>
+          </li>
+        </ul>
+        <div
+          class="bg-white flex justify-center items-center px-8 mx-auto gap-4"
+        >
+          <img src="images/deposit/bankwire.webp" alt="" />
+          <img src="images/deposit/tether.webp" alt="" />
+        </div>
+      </section>
+
       <!-- main end-->
     </main>
-    <!-- ===============================
-      お問い合わせ
-  =============================== -->
-    <section id="contact" class="contact section">
-      <div class="container">
-        <h2 class="section-title">お問い合わせ</h2>
-        <form class="" action="form.php" method="post">
-          <label class="block">
-            お名前
-            <input
-              type="text"
-              name="name"
-              class="w-full mt-1 p-2 border rounded"
-              required
-            />
-          </label>
-
-          <label class="block"
-            >メールアドレス<input
-              type="email"
-              name="email"
-              class="w-full mt-1 p-2 border rounded"
-              required
-          /></label>
-          <label class="block"
-            >お問い合わせ内容<textarea
-              name="message"
-              class="w-full mt-1 p-2 border rounded"
-              required
-            ></textarea>
-          </label>
-          <button type="submit" class="">送信</button>
-        </form>
-      </div>
-    </section>
 
     <!-- ===============================
       フッター
   =============================== -->
-    <footer class="text-center">
-      <p>&copy; 2025 ***************** All rights reserved.</p>
+    <footer class="bg-accent text-white">
+      <p>&copy; 2025 MINT TRADING</p>
     </footer>
     <!-- ===============================
       JS

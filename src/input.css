@@ -5,6 +5,30 @@
 .hero {
   background-image: url("../images/hero-bg.webp");
 }
+.step1 {
+  background-image: url("../images/start-step/1.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.step2 {
+  background-image: url("../images/start-step/2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.step3 {
+  background-image: url("../images/start-step/3.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.deposit {
+  background-image: url("../images/deposit/bg.webp");
+  background-size: 50% 100%;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
 
 .swiper-button-prev,
 .swiper-button-next {

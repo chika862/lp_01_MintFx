@@ -1,0 +1,35 @@
+<!-- ===============================
+      お問い合わせ
+  =============================== -->
+<section id="contact" class="contact section">
+  <div class="container">
+    <h2 class="section-title">お問い合わせ</h2>
+    <form class="" action="form.php" method="post">
+      <label class="block">
+        お名前
+        <input
+          type="text"
+          name="name"
+          class="w-full mt-1 p-2 border rounded"
+          required
+        />
+      </label>
+
+      <label class="block"
+        >メールアドレス<input
+          type="email"
+          name="email"
+          class="w-full mt-1 p-2 border rounded"
+          required
+      /></label>
+      <label class="block"
+        >お問い合わせ内容<textarea
+          name="message"
+          class="w-full mt-1 p-2 border rounded"
+          required
+        ></textarea>
+      </label>
+      <button type="submit" class="">送信</button>
+    </form>
+  </div>
+</section>
