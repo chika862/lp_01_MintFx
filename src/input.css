@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero {
+  background-image: url("../images/hero-bg.webp");
+}
+/* スライダーカスタムCSS */
+/* .swiper-pagination-bullet {
+  background-color: white;
+} */
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
+/* スマホ向け */
+@media (max-width: 639px) {
+  .hero {
+    background-image: url("../images/hero-bg-sm.webp");
+    background-position: center bottom;
+  }
+}
