@@ -190,3 +190,48 @@ body.open #mask {
   opacity: 0.7;
   pointer-events: auto;
 }
+
+/*PC menu*/
+.accordion {
+  list-style: none;
+}
+
+.accordion-a {
+  display: none;
+  overflow: hidden;
+}
+
+.accordion-a-inner {
+  position: relative;
+}
+
+.accordion-a-inner {
+  padding: 5px 0 25px 41px;
+}
+
+.accordion-a-prefix {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-variation-settings: "wdth" 75;
+  line-height: 1;
+}
+
+.accordion-a-prefix {
+  left: 10px;
+  top: 3px;
+  font-size: 24px;
+}
+
+.accordion-a-content p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.accordion-a-content p + p {
+  margin-top: 25px;
+}
+
+.accordion-a-content p + p {
+  margin-top: 20px;
+}

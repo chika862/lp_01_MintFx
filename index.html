@@ -40,7 +40,7 @@
           <h1 class="my-auto md:h-12">
             <img
               src="images/logo.svg"
-              alt="MINT TRADING"
+              alt="MINT TRADINGロゴ"
               class="object-contain"
             />
           </h1>
@@ -50,7 +50,6 @@
                 <ul>
                   <li><a href="#" class="p-3 block">トップページ</a></li>
 
-                  <!-- 会社概要 -->
                   <li class="relative list-text">
                     <button
                       class="submenu-btn flex justify-between w-full items-center p-3"
@@ -76,7 +75,6 @@
                     </ul>
                   </li>
 
-                  <!-- トレード -->
                   <li class="relative list-text">
                     <button
                       class="submenu-btn flex justify-between w-full items-center p-3"
@@ -125,81 +123,151 @@
           </div>
         </div>
       </div>
-      <!-- スマホ、タブレット用ここまで -->
       <!-- PC用 -->
       <div
-        class="hidden lg:block lg:absolute top-0 left-0 w-full backdrop-blur-sm z-50 h-20"
+        class="hidden lg:flex lg:absolute top-0 left-0 w-full backdrop-blur-sm z-50 h-15 items-center justify-between px-6"
       >
-        <div class="flex items-center justify-between">
-          <h1 class="my-auto md:h-12">
-            <img
-              src="images/logo.svg"
-              alt="MINT TRADING"
-              class="object-contain"
-            />
-          </h1>
-        </div>
-        <!-- <nav class="header-pc-nav text-white">
+        <h1 class="my-auto h-15">
+          <img
+            src="images/logo.svg"
+            alt="MINT TRADINGロゴ"
+            class="object-contain"
+          />
+        </h1>
+        <nav class="header-pc-nav absolute top-8 right-0 pr-4 text-white">
           <ul class="font-bold">
-            <li class="w-full sm:w-auto"><a href="">トップページ</a></li>
-            <li class="w-full sm:w-auto">
-              会社概要
-              <ul class="pl-4 space-y-2 pt-2">
-                <li><a href="">MINT TRADINGとは?</a></li>
-                <li><a href="">ライセンス</a></li>
-              </ul>
-            </li>
-            <li class="w-full sm:w-auto">
-              トレード
-              <ul class="pl-4 space-y-2 pt-2">
-                <li><a href="">口座タイプ</a></li>
-                <li><a href="">入出金方法</a></li>
-                <li><a href="">プラットフォーム</a></li>
-              </ul>
-            </li>
-            <li class="w-full sm:w-auto"><a href="">アフィリエイト</a></li>
-            <li class="w-full sm:w-auto"><a href="">キャンペーン</a></li>
-          </ul>
-        </nav> -->
-        <nav class="header-pc-nav text-white">
-          <ul class="font-bold">
-            <li class="w-full sm:w-auto">
+            <li class="w-full sm:w-auto mb-4">
               <a href="">トップページ</a>
             </li>
             <li class="w-full sm:w-auto">
               <button
-                class="w-full text-left flex justify-between items-center submenu-btn"
+                class="submenu-btn flex justify-between w-full items-center"
               >
-                会社概要
-                <span class="transition-transform duration-300">▾</span>
+                会社概要<i
+                  class="fa-solid fa-chevron-down ml-2 transition-transform duration-300"
+                ></i>
               </button>
               <ul
-                class="pl-4 space-y-2 pt-2 max-h-0 overflow-hidden transition-all duration-300"
+                class="submenu max-h-0 space-y-1 mb-2 overflow-hidden transition-all duration-300 mt-2 rounded border-t border-transparent"
               >
-                <li><a href="">MINT TRADINGとは?</a></li>
-                <li><a href="">ライセンス</a></li>
+                <li>
+                  <a href="#" class="block"
+                    ><span class="pl-2">MINT TRADINGとは?</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block"
+                    ><span class="pl-2">ライセンス</span></a
+                  >
+                </li>
               </ul>
             </li>
+
             <li class="w-full sm:w-auto">
               <button
-                class="w-full text-left flex justify-between items-center submenu-btn"
+                class="submenu-btn flex justify-between w-full items-center"
               >
-                トレード
-                <span class="transition-transform duration-300">▾</span>
+                トレード<i
+                  class="fa-solid fa-chevron-down ml-2 transition-transform duration-300"
+                ></i>
               </button>
               <ul
-                class="pl-4 space-y-2 pt-2 max-h-0 overflow-hidden transition-all duration-300"
+                class="submenu max-h-0 space-y-1 mb-2 overflow-hidden transition-all duration-300 mt-2 rounded border-t border-transparent"
               >
-                <li><a href="">口座タイプ</a></li>
-                <li><a href="">入出金方法</a></li>
-                <li><a href="">プラットフォーム</a></li>
+                <li>
+                  <a href="#" class="block"
+                    ><span class="pl-2">口座タイプ</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block"
+                    ><span class="pl-2">入出金方法</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block"
+                    ><span class="pl-2">プラットフォーム</span></a
+                  >
+                </li>
               </ul>
             </li>
-            <li class="w-full sm:w-auto"><a href="">アフィリエイト</a></li>
-            <li class="w-full sm:w-auto"><a href="">キャンペーン</a></li>
+
+            <li class="w-full sm:w-auto mb-4"><a href="">アフィリエイト</a></li>
+            <li class="w-full sm:w-auto mb-4"><a href="">キャンペーン</a></li>
+            <li class="w-full sm:w-auto mb-4"><a href="">口座開設(無料)</a></li>
+            <li class="w-full sm:w-auto mb-4"><a href="">ログイン</a></li>
           </ul>
         </nav>
+        <!-- <div id="navArea-pc">
+            <nav class="header-nav  text-white">
+              <div class="inner-pc">
+                <ul>
+                  <li><a href="#" class="p-3 block">トップページ</a></li>
+
+                  <li class="relative list-text">
+                    <button
+                      class="submenu-btn flex justify-between w-full items-center p-3"
+                    >
+                      会社概要
+                      <i
+                        class="fa-solid fa-chevron-down ml-2 transition-transform duration-300"
+                      ></i>
+                    </button>
+                    <ul
+                      class="submenu max-h-0 overflow-hidden transition-all duration-300 mt-2 rounded border-t border-transparent"
+                    >
+                      <li>
+                        <a href="#" class="block p-3"
+                          ><span class="pl-4">MINT TRADINGとは?</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="block p-3"
+                          ><span class="pl-4">ライセンス</span></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="relative list-text">
+                    <button
+                      class="submenu-btn flex justify-between w-full items-center p-3"
+                    >
+                      トレード
+                      <i
+                        class="fa-solid fa-chevron-down ml-2 transition-transform duration-300"
+                      ></i>
+                    </button>
+                    <ul
+                      class="submenu max-h-0 overflow-hidden transition-all duration-300 mt-2 rounded border-t border-transparent"
+                    >
+                      <li>
+                        <a href="#" class="block p-3"
+                          ><span class="pl-4">口座タイプ</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="block p-3"
+                          ><span class="pl-4">入出金方法</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="block p-3"
+                          ><span class="pl-4">プラットフォーム</span></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#" class="p-3 block">アフィリエイト</a></li>
+                  <li><a href="#" class="p-3 block">キャンペーン</a></li>
+                  <li><a href="#" class="p-3 block">口座開設(無料)</a></li>
+                  <li><a href="#" class="p-3 block">ログイン</a></li>
+                </ul>
+              </div>
+            </nav> -->
       </div>
+
       <!-- PC用ここまで -->
     </header>
     <!-- ===============================
@@ -988,6 +1056,79 @@
           });
         });
       });
+
+      // PCメニュー
+      // document.querySelectorAll(".accordion").forEach((accordion) => {
+      //   const props = {
+      //     isAnimating: false,
+      //     slideDuration: 400,
+      //     slideEasing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+      //   };
+
+      //   function answerShow(li) {
+      //     props.isAnimating = true;
+      //     li.classList.add("is-open");
+
+      //     const answer = li.querySelector(".accordion-a");
+      //     answer.style.display = "block";
+      //     const startHeight = 0;
+      //     const endHeight = answer.scrollHeight;
+
+      //     answer.animate(
+      //       [{ height: `${startHeight}px` }, { height: `${endHeight}px` }],
+      //       {
+      //         duration: props.slideDuration,
+      //         easing: props.slideEasing,
+      //       }
+      //     ).onfinish = () => {
+      //       answer.style.height = "";
+      //       props.isAnimating = false;
+      //     };
+      //   }
+
+      //   function answerHide(li) {
+      //     props.isAnimating = true;
+      //     li.classList.remove("is-open");
+
+      //     const answer = li.querySelector(".accordion-a");
+
+      //     const startHeight = answer.scrollHeight;
+      //     const endHeight = 0;
+
+      //     answer.animate(
+      //       [{ height: `${startHeight}px` }, { height: `${endHeight}px` }],
+      //       {
+      //         duration: props.slideDuration,
+      //         easing: props.slideEasing,
+      //       }
+      //     ).onfinish = () => {
+      //       answer.style.display = "";
+      //       answer.style.height = "";
+      //       props.isAnimating = false;
+      //     };
+      //   }
+
+      //   const firstLi = accordion.querySelectorAll("li")[0];
+      //   firstLi.classList.add("is-open");
+
+      //   const answer = firstLi.querySelector(".accordion-a");
+      //   answer.style.display = "block";
+
+      //   accordion.querySelectorAll("li").forEach((li) => {
+      //     li.querySelector(".accordion-q button").addEventListener(
+      //       "click",
+      //       () => {
+      //         if (!props.isAnimating) {
+      //           if (!li.classList.contains("is-open")) {
+      //             answerShow(li);
+      //           } else {
+      //             answerHide(li);
+      //           }
+      //         }
+      //       }
+      //     );
+      //   });
+      // });
     </script>
   </body>
 </html>
