@@ -37,7 +37,7 @@
           />
         </h1>
         <div id="navArea">
-          <nav>
+          <nav class="header-nav">
             <div class="inner">
               <ul>
                 <li><a href="#" class="p-3 block">トップページ</a></li>
@@ -722,8 +722,127 @@
     <!-- ===============================
       フッター
   =============================== -->
-    <footer class="bg-accent text-white">
-      <p>&copy; 2025 MINT TRADING</p>
+    <footer class="bg-accent text-white p-5">
+      <div class="flex flex-col md:flex-row">
+        <img
+          src="images/logo.svg"
+          alt="MINT TRADINGのロゴ"
+          class="px-10 pt-10"
+        />
+        <div
+          class="flex flex-col md:flex-row w-1/2 mx-auto my-4 text-center space-y-1"
+        >
+          <a
+            href="mailto:support@minttrading.com"
+            class="underline underline-offset-4 decoration-white hover:text-blue-300 hover:decoration-blue-300"
+            >support@minttrading.com</a
+          >
+          <a
+            href="tel:03-1234-5678"
+            class="underline underline-offset-4 decoration-white hover:text-blue-300 hover:decoration-blue-300"
+            >03-1234-5678</a
+          >
+        </div>
+      </div>
+      <div class="border-t border-white my-6"></div>
+      <div class="flex flex-col md:flex-row">
+        <div>
+          <h2 class="font-bold pb-2 text-sm">金融規制</h2>
+          <div class="flex text-xs">
+            <div class="border-r pr-4">
+              <p>ASIC</p>
+              <p>374409</p>
+            </div>
+            <div class="border-r px-4">
+              <p>CySEC</p>
+              <p>412/22</p>
+            </div>
+            <div class="border-r px-4">
+              <p>FSA</p>
+              <p>SD089</p>
+            </div>
+            <div class="border-r px-4">
+              <p>FSCA</p>
+              <p>53199</p>
+            </div>
+            <div class="pl-4">
+              <p>LFSA</p>
+              <p>MB/21/0081</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <h2 class="font-bold pb-2 text-sm">セキュリティ</h2>
+          <div class="flex space-x-2">
+            <img
+              src="images/footer/pci-dss.svg"
+              alt="pci DSS COMPLIANTのロゴ"
+              class="w-1/5"
+            />
+            <img
+              src="images/footer/mastercard.svg"
+              alt="MasterCard SecureCodeのロゴ"
+              class="w-1/5"
+            />
+            <img
+              src="images/footer/secure.svg"
+              alt="SECURE SSL ENCRYPTIONのロゴ"
+              class="w-1/5"
+            />
+            <img
+              src="images/footer/3d-secure.svg"
+              alt="3D SECUREのロゴ"
+              class="w-1/5"
+            />
+          </div>
+        </div>
+        <div class="border-t border-white my-6"></div>
+        <nav class="footer-nav text-xs">
+          <ul class="flex font-bold">
+            <div class="w-1/2 space-y-2">
+              <!-- 1段目 -->
+              <li class="w-full sm:w-auto"><a href="">トップページ</a></li>
+              <li class="w-full sm:w-auto">
+                会社概要
+                <ul class="pl-4 space-y-2 pt-2">
+                  <li><a href="">MINT TRADINGとは?</a></li>
+                  <li><a href="">ライセンス</a></li>
+                </ul>
+              </li>
+            </div>
+            <div class="w-1/2 space-y-2">
+              <!-- 2段目 -->
+              <li class="w-full sm:w-auto">
+                トレード
+                <ul class="pl-4 space-y-2 pt-2">
+                  <li><a href="">口座タイプ</a></li>
+                  <li><a href="">入出金方法</a></li>
+                  <li><a href="">プラットフォーム</a></li>
+                </ul>
+              </li>
+              <li class="w-full sm:w-auto"><a href="">アフィリエイト</a></li>
+              <li class="w-full sm:w-auto"><a href="">キャンペーン</a></li>
+            </div>
+          </ul>
+        </nav>
+        <div class="border-t border-white my-6"></div>
+        <div>
+          <p class="text-sm">
+            <span class="font-extrabold">リスクに関する警告</span>:
+            外国為替金取引やデリバティブ取引は高リスクを伴います。損失に耐えうる範囲の資金でお取引されることをお勧め致します。デリバティブ取引は全ての投資家に適しているわけではございません。取引に伴うリスクを充分に理解された上で、必要に応じて専門家にご相談ください。
+          </p>
+        </div>
+        <p class="text-sm mt-8">
+          <span class="font-extrabold">免責事項</span>:
+          XSは、現地の法律または規制に反する可能性がある国・地域において、金融サービスの勧誘とみなされるいかなる行為も行っておりません。
+        </p>
+        <p class="text-sm">
+          本ウェブサイト上の情報は、特定の国や地域に居住する方々を対象とするものではなく、投資助言、推奨、または金融サービスや投資活動への勧誘を構成するものではありません。<br />また、本ウェブサイトでは、ユーザーの利便性を向上させるために多言語翻訳機能を提供しています。<br />英語以外の言語への翻訳は、あくまで情報提供と利便性を目的としたものであり、特定の国や地域に居住する個人に対し、金融サービスを提供、推奨、または勧誘することを意図したものではありません。
+        </p>
+      </div>
+
+      <p class="mt-5 text-center">&copy; 2025 MINT TRADING</p>
     </footer>
     <!-- nav mask-->
     <div id="mask"></div>
