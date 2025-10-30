@@ -23,11 +23,13 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.deposit {
-  background-image: url("../images/deposit/bg.webp");
-  background-size: 50% 100%;
-  background-position: right center;
-  background-repeat: no-repeat;
+@media (min-width: 1024px) {
+  .deposit {
+    background-image: url("../images/deposit/bg.webp");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+  }
 }
 
 .swiper-button-prev,

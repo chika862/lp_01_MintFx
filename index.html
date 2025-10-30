@@ -399,7 +399,9 @@
           class="flex flex-col px-8 md:flex-row space-y-6 md:space-y-0 md:space-x-4 md:max-w-[1240px] md:mx-auto lg:px-0"
         >
           <!-- STEP1 -->
-          <div class="step1 rounded-xl p-8 lg:p-6 lg:w-[390px] lg:h-[540px]">
+          <div
+            class="step1 rounded-xl p-8 md:mx-4 lg:mx-0 lg:p-6 lg:w-[390px] lg:h-[540px]"
+          >
             <p>STEP1</p>
             <h3 class="font-semibold text-xl lg:text-3xl">フォーム入力</h3>
             <div class="h-[100px] lg:h-[300px]"></div>
@@ -409,7 +411,9 @@
           </div>
 
           <!-- STEP2 -->
-          <div class="step2 rounded-xl p-8 lg:p-6 lg:w-[390px] lg:h-[540px]">
+          <div
+            class="step2 rounded-xl p-8 md:mx-4 lg:mx-0 lg:p-6 lg:w-[390px] lg:h-[540px]"
+          >
             <p>STEP2</p>
             <h3 class="font-semibold text-xl lg:text-3xl">
               必要書類アップロード
@@ -421,7 +425,9 @@
             </p>
           </div>
           <!-- STEP3 -->
-          <div class="step3 rounded-xl p-8 lg:p-6 lg:w-[390px] lg:h-[540px]">
+          <div
+            class="step3 rounded-xl p-8 md:mx-4 lg:mx-0 lg:p-6 lg:w-[390px] lg:h-[540px]"
+          >
             <p>STEP3</p>
             <h3 class="font-semibold text-xl lg:text-3xl">口座開設完了</h3>
             <div class="h-[100px] lg:h-[300px]"></div>
@@ -444,7 +450,7 @@
       MINT TRADINGが選ばれる理由
   =============================== -->
       <section class="py-6 text-primary text-center px-8 lg:pb-20">
-        <h2 class="font-bold text-2xl pt-2 pb-6 lg:pt-8 lg:pb-14">
+        <h2 class="font-bold text-2xl pt-2 pb-6 lg:pt-8 lg:pb-14 lg:text-3xl">
           MINT TRADINGが<br class="md:hidden" />選ばれる理由
         </h2>
         <div class="px-8 md:max-w-[1240px] md:mx-auto lg:px-0 space-y-8">
@@ -566,199 +572,205 @@
       取引種類一覧をご確認ください。
   =============================== -->
       <section class="py-6 px-5 text-secondary bg-background text-center">
-        <div class="flex flex-col md:flex-row">
-          <h2 class="font-bold text-2xl pt-2 pb-6 d-block w-full">
-            取引種類一覧をご確認ください。
-          </h2>
-          <div
-            class="flex flex-col md:flex-row text-center text-white font-bold pt-4 pb-8 space-y-4"
-          >
-            <a
-              href="#"
-              class="relative flex bg-accent rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
-              >今すぐ口座開設(無料)<span
-                class="absolute right-4 top-1/2 -translate-y-1/2"
-                >></span
-              ></a
+        <div class="px-8 md:max-w-[1240px] md:mx-auto lg:px-0 lg:py-9">
+          <div class="flex flex-col md:flex-row">
+            <h2
+              class="font-bold text-2xl pt-2 pb-6 d-block w-full lg:text-left lg:text-3xl"
             >
-            <a
-              href="#"
-              class="relative flex border-2 border-accent text-accent rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
-              >詳しく見る<span class="absolute right-4 top-1/2 -translate-y-1/2"
-                >></span
-              ></a
+              取引種類一覧をご確認ください。
+            </h2>
+
+            <div
+              class="flex flex-col md:flex-row text-center text-white font-bold pt-4 md:pt-10 lg:pt-0 pb-8 space-y-4 md:space-y-0 md:space-x-6"
             >
-          </div>
-        </div>
-        <!-- 種類一覧 -->
-        <div>
-          <div class="flex space-x-5 md:space-x-4 items-stretch">
-            <!-- 外国為替(FX)取引 -->
-            <div class="w-full h-[360px] flex flex-col">
-              <img
-                src="images/trade-list/1.webp"
-                alt="EUR/USD"
-                class="w-full h-[160px] object-cover rounded-xl"
-              />
-              <h3 class="font-bold text-accent text-xl py-4">
-                外国為替(FX)取引
-              </h3>
-              <p class="text-left">
-                取引の定番メジャー通貨から、マイナー・エキゾチック通貨まで安心の環境で快適に取引いただけます。
-              </p>
-            </div>
-            <!-- 金属取引 -->
-            <div class="w-full h-[360px] flex flex-col">
-              <img
-                src="images/trade-list/2.webp"
-                alt="EUR/USD"
-                class="w-full h-[160px] object-cover rounded-xl"
-              />
-              <h3 class="font-bold text-accent text-xl py-4">金属取引</h3>
-              <p class="text-left">
-                ゴールドやシルバーをはじめとする貴金属取引で、投資の潜在力を最大限に発揮します。
-              </p>
-            </div>
-          </div>
-
-          <div class="flex space-x-5 md:space-x-4 items-stretch">
-            <!-- 株式取引 -->
-            <div class="w-full h-[360px] flex flex-col">
-              <img
-                src="images/trade-list/3.webp"
-                alt="EUR/USD"
-                class="w-full h-[160px] object-cover rounded-xl"
-              />
-              <h3 class="font-bold text-accent text-xl py-4">株式取引</h3>
-              <p class="text-left">
-                アメリカやヨーロッパ、香港の有力企業株を幅広く揃え、CFD取引を快適にご利用いただけます。
-              </p>
-            </div>
-            <!-- エネルギー取引 -->
-            <div class="w-full h-[360px] flex flex-col">
-              <img
-                src="images/trade-list/4.webp"
-                alt="EUR/USD"
-                class="w-full h-[160px] object-cover rounded-xl"
-              />
-              <h3 class="font-bold text-accent text-xl py-4">エネルギー取引</h3>
-              <p class="text-left">
-                UKOIL、USOIL、天然ガスといった主要エネルギー銘柄を活用し、ポートフォリオを更に拡充できます。
-              </p>
-            </div>
-          </div>
-
-          <div class="flex space-x-5 md:space-x-4 items-stretch">
-            <!-- 先物取引 -->
-            <div class="w-full h-[360px] flex flex-col">
-              <img
-                src="images/trade-list/5.webp"
-                alt="EUR/USD"
-                class="w-full h-[160px] object-cover rounded-xl"
-              />
-              <h3 class="font-bold text-accent text-xl py-4">先物取引</h3>
-              <p class="text-left">
-                世界の主要市場をカバー。コモディティや通過、指数など、多彩な先物CFDを取引いただけます。
-              </p>
-            </div>
-            <!-- 仮想通貨取引 -->
-            <div class="w-full h-[360px] flex flex-col">
-              <img
-                src="images/trade-list/6.webp"
-                alt="EUR/USD"
-                class="w-full h-[160px] object-cover rounded-xl"
-              />
-              <h3 class="font-bold text-accent text-xl py-4">仮想通貨取引</h3>
-              <p class="text-left">
-                人気のビットコインやイーサリアムなど、注目の仮想通貨をCFDで自由にトレード可能です。
-              </p>
-            </div>
-          </div>
-
-          <div class="flex space-x-5 md:space-x-4 items-stretch">
-            <!-- インデックス取引 -->
-            <div class="w-full h-[360px] flex flex-col">
-              <img
-                src="images/trade-list/7.webp"
-                alt="EUR/USD"
-                class="w-full h-[160px] object-cover rounded-xl"
-              />
-              <h3 class="font-bold text-accent text-xl py-4">
-                インデックス取引
-              </h3>
-              <p class="text-left">
-                世界の主要株価指数、ダウ・ジョーンズ、ナスダック、DAXなどをCFD取引で幅広くカバーできます。
-              </p>
-            </div>
-
-            <div class="w-full h-[360px] invisible"></div>
-          </div>
-        </div>
-        <!-- 取引プラットフォーム -->
-
-        <div class="text-secondary">
-          <h2 class="font-bold text-2xl pb-6">取引プラットフォーム</h2>
-          <p class="text-left">
-            多様なアセットを自在に扱い、トレードの可能性を広げましょう。最新テクノロジーを備えた取引プラットフォームで、世界のマーケットがより身近に。
-          </p>
-          <div class="my-6 space-y-4">
-            <!-- meta4-->
-            <div class="rounded-xl bg-[#2faf85] p-4">
-              <div class="flex">
-                <div
-                  class="bg-white my-auto rounded-xl w-[100px] h-[100px] aspect-square flex justify-center items-center"
-                >
-                  <img
-                    src="images/trade-list/meta4.svg"
-                    alt="Metatrader4のロゴ"
-                    class="h-[70px] w-[70px]"
-                  />
-                </div>
-                <div class="px-4 text-left">
-                  <h3 class="text-white text-xl font-bold mb-2">Metatrader4</h3>
-                  <p class="text-white">
-                    プロのトレーダーに最も人気のある取引プラットフォームで、世界の金融市場を世界中どこからでも取引できます。
-                  </p>
-                </div>
-              </div>
-              <!-- ↓ボタンを復活させるときはclass="pointer-events-none"を削除してください↓ -->
               <a
                 href="#"
-                class="pointer-events-none relative flex mx-12 mt-4 border-2 border-white text-white font-bold rounded-xl p-2 justify-center items-center"
-                ><span class="absolute left-4 top-1/2 -translate-y-1/2">×</span
-                >ただいま準備中です<span
+                class="relative flex md:w-[300px] lg:w-[250px] lg:h-[50px] bg-accent rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
+                >今すぐ口座開設(無料)<span
                   class="absolute right-4 top-1/2 -translate-y-1/2"
-                  >×</span
+                  >></span
                 ></a
               >
-            </div>
-            <!-- meta5-->
-            <div class="rounded-xl bg-[#00337f] p-4">
-              <div class="flex">
-                <div
-                  class="bg-white my-auto rounded-xl w-[100px] h-[100px] aspect-square flex justify-center items-center"
-                >
-                  <img
-                    src="images/trade-list/meta5.svg"
-                    alt="Metatrader5のロゴ"
-                    class="h-[70px] w-[70px]"
-                  />
-                </div>
-                <div class="px-4 text-left">
-                  <h3 class="text-white text-xl font-bold mb-2">Metatrader5</h3>
-                  <p class="text-white">
-                    業界最高クラスの機能を備えた最新の取引プラットフォームで、世界の金融市場を自在に取引いただけます。
-                  </p>
-                </div>
-              </div>
               <a
                 href="#"
-                class="relative flex mx-12 mt-4 border-2 border-white text-white font-bold rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
+                class="relative flex md:w-[300px] lg:w-[250px] lg:h-[50px] border-2 text-accent border-accent rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
                 >詳しく見る<span
                   class="absolute right-4 top-1/2 -translate-y-1/2"
                   >></span
                 ></a
               >
+            </div>
+          </div>
+          <!-- 種類一覧 -->
+          <div class="flex flex-col gap-4 lg:gap-8 text-secondary">
+            <div class="flex flex-col md:flex-row md:space-x-4 md:pb-8">
+              <div class="md:w-1/4 h-[360px] md:h-auto flex flex-col">
+                <img
+                  src="images/trade-list/1.webp"
+                  alt="EUR/USD"
+                  class="w-full h-[160px] md:h-auto object-cover rounded-xl"
+                />
+                <h3 class="font-bold text-accent text-xl py-4">
+                  外国為替(FX)取引
+                </h3>
+                <p class="text-left">
+                  取引の定番メジャー通貨から、マイナー・エキゾチック通貨まで安心の環境で快適に取引いただけます。
+                </p>
+              </div>
+              <div class="md:w-1/4 h-[360px] md:h-auto flex flex-col">
+                <img
+                  src="images/trade-list/2.webp"
+                  alt="EUR/USD"
+                  class="w-full h-[160px] md:h-auto object-cover rounded-xl"
+                />
+                <h3 class="font-bold text-accent text-xl py-4">金属取引</h3>
+                <p class="text-left">
+                  ゴールドやシルバーをはじめとする貴金属取引で、投資の潜在力を最大限に発揮します。
+                </p>
+              </div>
+              <div class="md:w-1/4 h-[360px] md:h-auto flex flex-col">
+                <img
+                  src="images/trade-list/3.webp"
+                  alt="EUR/USD"
+                  class="w-full h-[160px] md:h-auto object-cover rounded-xl"
+                />
+                <h3 class="font-bold text-accent text-xl py-4">株式取引</h3>
+                <p class="text-left">
+                  アメリカやヨーロッパ、香港の有力企業株を幅広く揃え、CFD取引を快適にご利用いただけます。
+                </p>
+              </div>
+              <div class="md:w-1/4 h-[360px] md:h-auto flex flex-col">
+                <img
+                  src="images/trade-list/4.webp"
+                  alt="EUR/USD"
+                  class="w-full h-[160px] md:h-auto object-cover rounded-xl"
+                />
+                <h3 class="font-bold text-accent text-xl py-4">
+                  エネルギー取引
+                </h3>
+                <p class="text-left">
+                  UKOIL、USOIL、天然ガスといった主要エネルギー銘柄を活用し、ポートフォリオを更に拡充できます。
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:space-x-4 md:pb-8">
+              <div class="md:w-1/4 h-[360px] md:h-auto flex flex-col">
+                <img
+                  src="images/trade-list/5.webp"
+                  alt="EUR/USD"
+                  class="w-full h-[160px] md:h-auto object-cover rounded-xl"
+                />
+                <h3 class="font-bold text-accent text-xl py-4">先物取引</h3>
+                <p class="text-left">
+                  世界の主要市場をカバー。コモディティや通過、指数など、多彩な先物CFDを取引いただけます。
+                </p>
+              </div>
+              <div class="md:w-1/4 h-[360px] md:h-auto flex flex-col">
+                <img
+                  src="images/trade-list/6.webp"
+                  alt="EUR/USD"
+                  class="w-full h-[160px] md:h-auto object-cover rounded-xl"
+                />
+                <h3 class="font-bold text-accent text-xl py-4">仮想通貨取引</h3>
+                <p class="text-left">
+                  人気のビットコインやイーサリアムなど、注目の仮想通貨をCFDで自由にトレード可能です。
+                </p>
+              </div>
+              <div class="md:w-1/4 h-[360px] md:h-auto flex flex-col">
+                <img
+                  src="images/trade-list/7.webp"
+                  alt="EUR/USD"
+                  class="w-full h-[160px] md:h-auto object-cover rounded-xl"
+                />
+                <h3 class="font-bold text-accent text-xl py-4">
+                  インデックス取引
+                </h3>
+                <p class="text-left">
+                  世界の主要株価指数、ダウ・ジョーンズ、ナスダック、DAXなどをCFD取引で幅広くカバーできます。
+                </p>
+              </div>
+              <div
+                class="hidden md:w-1/4 h-[360px] md:flex flex-col invisible"
+              ></div>
+            </div>
+          </div>
+
+          <!-- 取引プラットフォーム -->
+          <div class="text-secondary">
+            <h2
+              class="font-bold text-2xl pb-6 md:py-10 lg:text-left lg:text-3xl"
+            >
+              取引プラットフォーム
+            </h2>
+            <p class="text-left lg:w-[620px] lg:pb-6">
+              多様なアセットを自在に扱い、トレードの可能性を広げましょう。最新テクノロジーを備えた取引プラットフォームで、世界のマーケットがより身近に。
+            </p>
+
+            <div class="my-6 space-y-4 md:space-y-0 md:flex md:space-x-8">
+              <!-- meta4 -->
+              <div class="rounded-xl bg-[#2faf85] p-4 md:w-1/2">
+                <div class="flex">
+                  <div
+                    class="bg-white my-auto rounded-xl w-[100px] h-[100px] lg:h-[160px] lg:w-[160px] aspect-square flex justify-center items-center"
+                  >
+                    <img
+                      src="images/trade-list/meta4.svg"
+                      alt="Metatrader4のロゴ"
+                      class="h-[70px] w-[70px] lg:h-[100px] lg:w-[100px]"
+                    />
+                  </div>
+                  <div class="px-4 text-left lg:pt-5">
+                    <h3 class="text-white text-xl font-bold mb-2 lg:text-2xl">
+                      Metatrader4
+                    </h3>
+                    <p class="text-white">
+                      プロのトレーダーに最も人気のある取引プラットフォームで、世界の金融市場を世界中どこからでも取引できます。
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="pointer-events-none lg:w-[255px] lg:mx-auto lg:mt-10 lg:mb-8 relative flex mx-12 mt-4 border-2 border-white text-white font-bold rounded-xl p-2 justify-center items-center"
+                  ><span class="absolute left-4 top-1/2 -translate-y-1/2"
+                    >×</span
+                  >ただいま準備中です<span
+                    class="absolute right-4 top-1/2 -translate-y-1/2"
+                    >×</span
+                  ></a
+                >
+              </div>
+
+              <!-- meta5 -->
+              <div class="rounded-xl bg-[#00337f] p-4 md:w-1/2">
+                <div class="flex">
+                  <div
+                    class="bg-white my-auto rounded-xl w-[100px] h-[100px] lg:h-[160px] lg:w-[160px] aspect-square flex justify-center items-center"
+                  >
+                    <img
+                      src="images/trade-list/meta5.svg"
+                      alt="Metatrader5のロゴ"
+                      class="h-[70px] w-[70px] lg:h-[100px] lg:w-[100px]"
+                    />
+                  </div>
+                  <div class="px-4 text-left lg:pt-5">
+                    <h3 class="text-white text-xl font-bold mb-2 lg:text-2xl">
+                      Metatrader5
+                    </h3>
+                    <p class="text-white">
+                      業界最高クラスの機能を備えた最新の取引プラットフォームで、世界の金融市場を自在に取引いただけます。
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="lg:w-[255px] lg:mx-auto lg:mt-10 lg:mb-8 relative flex mx-12 mt-4 border-2 border-white text-white font-bold rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
+                  >詳しく見る<span
+                    class="absolute right-4 top-1/2 -translate-y-1/2"
+                    >></span
+                  ></a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -768,81 +780,82 @@
       世界市場をリードするブローカー
   =============================== -->
       <section class="py-6 px-8 text-secondary text-center">
-        <h2 class="font-bold text-accent text-2xl pt-2 pb-6">
-          世界市場を<br class="md:hidden" />リードするブローカー
-        </h2>
-        <p class="text-left">
-          MINT
-          TRADINGが選ばれる理由をご確認ください。オンライントレードの成功への旅を始めましょう。
-        </p>
-        <ul class="flex flex-col pt-8 md:flex-row space-y-8 md:space-x-4">
-          <!-- 1 -->
-          <li>
-            <div class="w-full flex flex-col">
-              <img
-                src="images/leading/1.webp"
-                alt="セキュリティのイメージ画像"
-                class="w-full h-[200px] object-cover rounded-xl"
-              />
-              <h3 class="font-bold text-accent text-xl py-4">
-                外国為替(FX)取引
-              </h3>
-              <p class="text-left">
-                取引の定番メジャー通貨から、マイナー・エキゾチック通貨まで安心の環境で快適に取引いただけます。
-              </p>
-            </div>
-          </li>
-          <!-- 2 -->
-          <li>
-            <div class="w-full flex flex-col">
-              <img
-                src="images/leading/2.webp"
-                alt="高水準の安全性を確保"
-                class="w-full h-[200px] object-cover rounded-xl"
-              />
-              <h3 class="font-bold text-accent text-xl py-4">
-                外国為替(FX)取引
-              </h3>
-              <p class="text-left">
-                取引の定番メジャー通貨から、マイナー・エキゾチック通貨まで安心の環境で快適に取引いただけます。
-              </p>
-            </div>
-          </li>
-          <!-- 3 -->
-          <li>
-            <div class="w-full flex flex-col">
-              <img
-                src="images/leading/3.webp"
-                alt="高水準の安全性を確保"
-                class="w-full h-[200px] object-cover rounded-xl"
-              />
-              <h3 class="font-bold text-accent text-xl py-4">
-                外国為替(FX)取引
-              </h3>
-              <p class="text-left">
-                取引の定番メジャー通貨から、マイナー・エキゾチック通貨まで安心の環境で快適に取引いただけます。
-              </p>
-            </div>
-          </li>
-        </ul>
-        <div
-          class="flex flex-col md:flex-row text-center text-white font-bold pt-6 space-y-4"
-        >
-          <a
-            href="#"
-            class="relative flex bg-accent rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
-            >今すぐ口座開設(無料)<span
-              class="absolute right-4 top-1/2 -translate-y-1/2"
-              >></span
-            ></a
+        <div class="px-8 md:max-w-[1240px] md:mx-auto lg:px-0 lg:py-9">
+          <h2 class="font-bold text-accent text-2xl pt-2 pb-6 lg:text-3xl">
+            世界市場を<br class="md:hidden" />リードするブローカー
+          </h2>
+          <p class="text-left md:text-center">
+            MINT
+            TRADINGが選ばれる理由をご確認ください。オンライントレードの成功への旅を始めましょう。
+          </p>
+          <ul
+            class="flex flex-col pt-8 md:flex-row space-y-8 md:space-x-4 md:space-y-0 md:pb-5"
           >
-          <a
-            href="#"
-            class="relative flex border-2 border-accent text-accent rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
-            >詳しく見る<span class="absolute right-4 top-1/2 -translate-y-1/2"
-              >></span
-            ></a
+            <li>
+              <div class="w-full flex flex-col">
+                <img
+                  src="images/leading/1.webp"
+                  alt="セキュリティのイメージ画像"
+                  class="w-full h-[200px] md:h-[295px] object-cover rounded-xl"
+                />
+                <h3 class="font-bold text-accent text-xl py-4">
+                  万全のセキュリティ
+                </h3>
+                <p class="text-left">
+                  最新のセキュリティ技術で大切な資産と個人情報を保護。安心して取引できる環境を24時間体制で維持しています。
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="w-full flex flex-col">
+                <img
+                  src="images/leading/2.webp"
+                  alt="BUY/SELLのイメージ写真"
+                  class="w-full h-[200px] md:h-[295px] object-cover rounded-xl"
+                />
+                <h3 class="font-bold text-accent text-xl py-4">
+                  高レバレッジ/ゼロカット
+                </h3>
+                <p class="text-left">
+                  海外ライセンスにより最大1000倍の高レバレッジ取引を実現。ロスカット時の損失は当社が負担し、安心して収益追求が可能です。
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="w-full flex flex-col">
+                <img
+                  src="images/leading/3.webp"
+                  alt="外国人サポートセンターのイメージ写真"
+                  class="w-full h-[200px] md:h-[295px] object-cover rounded-xl"
+                />
+                <h3 class="font-bold text-accent text-xl py-4">
+                  多言語対応のサポート
+                </h3>
+                <p class="text-left">
+                  世界中の投資家に対応する多言語サポート。いつでも安心して相談できるグローバルな体制を整えています。
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div
+            class="flex flex-col md:flex-row text-center md:justify-center text-white font-bold pt-4 md:pt-10 lg:pt-10 pb-8 space-y-4 md:space-y-0 md:space-x-6"
           >
+            <a
+              href="#"
+              class="relative flex md:w-[300px] lg:w-[250px] lg:h-[50px] bg-accent rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
+              >今すぐ口座開設(無料)<span
+                class="absolute right-4 top-1/2 -translate-y-1/2"
+                >></span
+              ></a
+            >
+            <a
+              href="#"
+              class="relative flex md:w-[300px] lg:w-[250px] lg:h-[50px] border-2 text-accent border-accent rounded-xl p-2 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
+              >詳しく見る<span class="absolute right-4 top-1/2 -translate-y-1/2"
+                >></span
+              ></a
+            >
+          </div>
         </div>
       </section>
 
@@ -850,45 +863,72 @@
       入出金方法
   =============================== -->
       <section
-        class="md:deposit py-6 px-8 bg-background text-secondary text-center"
+        class="deposit py-3 px-8 bg-background text-secondary text-center"
       >
-        <h2 class="font-bold text-primary text-2xl pt-2 pb-6">入出金方法</h2>
-        <p class="text-left">
-          お客様の資金の安全はMINT
-          TRADINGの最優先事項です。いつでもどこでも、簡単かつスピーディーに入出金することが可能です。
-        </p>
-        <img
-          src="images/deposit/bg.webp"
-          alt="セキュリティのイメージ画像"
-          class="w-full h-[250px] object-cover py-5 md:hidden"
-        />
-        <ul class="text-center mx-auto text-xl mb-6 mt-3 space-y-2">
-          <li class="flex">
-            <img src="images/deposit/check.svg" class="w-[20px] my-auto mx-2" />
-            <p class="text-accent font-bold text-left">多彩な入出金方法</p>
-          </li>
-          <li class="flex">
-            <img src="images/deposit/check.svg" class="w-[20px] my-auto mx-2" />
-            <p class="text-accent font-bold text-left">スピーディーに着金</p>
-          </li>
-          <li class="flex">
-            <img src="images/deposit/check.svg" class="w-[20px] my-auto mx-2" />
-            <p class="text-accent font-bold text-left">分離資金で安全確保</p>
-          </li>
-          <li class="flex">
-            <img src="images/deposit/check.svg" class="w-[20px] my-auto mx-2" />
-            <p class="text-accent font-bold text-left">安全なお手続き</p>
-          </li>
-          <li class="flex">
-            <img src="images/deposit/check.svg" class="w-[20px] my-auto mx-2" />
-            <p class="text-accent font-bold text-left">入出金手数料無料</p>
-          </li>
-        </ul>
-        <div
-          class="bg-white flex justify-center items-center px-8 mx-auto gap-4"
-        >
-          <img src="images/deposit/bankwire.webp" alt="" />
-          <img src="images/deposit/tether.webp" alt="" />
+        <div class="px-8 md:max-w-[1240px] md:mx-auto lg:px-0 lg:py-9">
+          <div class="lg:w-[620px]">
+            <h2
+              class="font-bold text-primary text-2xl pt-2 pb-6 lg:text-3xl lg:text-left"
+            >
+              入出金方法
+            </h2>
+            <p class="text-left">
+              お客様の資金の安全はMINT
+              TRADINGの最優先事項です。いつでもどこでも、簡単かつスピーディーに入出金することが可能です。
+            </p>
+            <img
+              src="images/deposit/bg.webp"
+              alt="入出金のイメージ画像"
+              class="w-full h-[250px] object-cover py-5 md:hidden"
+            />
+            <ul class="text-center mx-auto text-xl mb-6 mt-3 space-y-2 lg:py-9">
+              <li class="flex">
+                <img
+                  src="images/deposit/check.svg"
+                  class="w-[20px] my-auto mx-2"
+                />
+                <p class="text-accent font-bold text-left">多彩な入出金方法</p>
+              </li>
+              <li class="flex">
+                <img
+                  src="images/deposit/check.svg"
+                  class="w-[20px] my-auto mx-2"
+                />
+                <p class="text-accent font-bold text-left">
+                  スピーディーに着金
+                </p>
+              </li>
+              <li class="flex">
+                <img
+                  src="images/deposit/check.svg"
+                  class="w-[20px] my-auto mx-2"
+                />
+                <p class="text-accent font-bold text-left">
+                  分離資金で安全確保
+                </p>
+              </li>
+              <li class="flex">
+                <img
+                  src="images/deposit/check.svg"
+                  class="w-[20px] my-auto mx-2"
+                />
+                <p class="text-accent font-bold text-left">安全なお手続き</p>
+              </li>
+              <li class="flex">
+                <img
+                  src="images/deposit/check.svg"
+                  class="w-[20px] my-auto mx-2"
+                />
+                <p class="text-accent font-bold text-left">入出金手数料無料</p>
+              </li>
+            </ul>
+            <div
+              class="bg-white flex justify-center items-center px-8 mx-auto gap-4 lg:w-[340px] lg:h-[110px] lg:ml-0"
+            >
+              <img src="images/deposit/bankwire.webp" alt="" />
+              <img src="images/deposit/tether.webp" alt="" />
+            </div>
+          </div>
         </div>
       </section>
 
