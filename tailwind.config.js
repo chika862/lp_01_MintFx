@@ -5,12 +5,13 @@ module.exports = {
     extend: {
       fontFamily: {
         noto: ["'Noto Sans'", "sans-serif"],
+        roboto: ["'Roboto'", "sans-serif"],
       },
       colors: {
         primary: "#1A1A1A",
         accent: "#1D8382",
         background: "#F5F5F7",
-        secondary: "666666",
+        secondary: "#666666",
       },
     },
   },

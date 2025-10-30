@@ -667,11 +667,6 @@ video {
   margin-right: auto;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -779,12 +774,12 @@ video {
   height: 100px;
 }
 
-.h-\[160px\] {
-  height: 160px;
-}
-
 .h-\[200px\] {
   height: 200px;
+}
+
+.h-\[220px\] {
+  height: 220px;
 }
 
 .h-\[250px\] {
@@ -803,20 +798,12 @@ video {
   height: 70px;
 }
 
-.h-\[80px\] {
-  height: 80px;
-}
-
 .max-h-0 {
   max-height: 0px;
 }
 
 .w-1\/2 {
   width: 50%;
-}
-
-.w-1\/5 {
-  width: 20%;
 }
 
 .w-8 {
@@ -837,10 +824,6 @@ video {
 
 .w-\[70px\] {
   width: 70px;
-}
-
-.w-\[80px\] {
-  width: 80px;
 }
 
 .w-full {
@@ -887,12 +870,6 @@ video {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
@@ -949,10 +926,6 @@ video {
 
 .border-2 {
   border-width: 2px;
-}
-
-.border-r {
-  border-right-width: 1px;
 }
 
 .border-t {
@@ -1065,6 +1038,11 @@ video {
   padding-right: 2rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1078,15 +1056,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 
 .pb-6 {
@@ -1169,11 +1138,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -1205,7 +1169,8 @@ video {
 }
 
 .text-secondary {
-  color: 666666;
+  --tw-text-opacity: 1;
+  color: rgb(102 102 102 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1270,6 +1235,12 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+/*カスタムここから*/
+
+body {
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
 }
 
 .hero {
@@ -1524,6 +1495,8 @@ body.open #mask {
   margin-top: 20px;
 }
 
+/*カスタムここまで*/
+
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1563,10 +1536,6 @@ body.open #mask {
     margin-right: 0px;
   }
 
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
   .md\:mt-3 {
     margin-top: 0.75rem;
   }
@@ -1587,16 +1556,8 @@ body.open #mask {
     height: 3rem;
   }
 
-  .md\:h-\[100px\] {
-    height: 100px;
-  }
-
   .md\:h-\[295px\] {
     height: 295px;
-  }
-
-  .md\:h-\[3rem\] {
-    height: 3rem;
   }
 
   .md\:h-auto {
@@ -1611,10 +1572,6 @@ body.open #mask {
     width: 25%;
   }
 
-  .md\:w-\[100px\] {
-    width: 100px;
-  }
-
   .md\:w-\[300px\] {
     width: 300px;
   }
@@ -1627,20 +1584,8 @@ body.open #mask {
     max-width: 1240px;
   }
 
-  .md\:max-w-\[620px\] {
-    max-width: 620px;
-  }
-
-  .md\:flex-1 {
-    flex: 1 1 0%;
-  }
-
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:items-start {
-    align-items: flex-start;
   }
 
   .md\:justify-center {
@@ -1703,10 +1648,6 @@ body.open #mask {
 
   .md\:pb-3 {
     padding-bottom: 0.75rem;
-  }
-
-  .md\:pb-4 {
-    padding-bottom: 1rem;
   }
 
   .md\:pb-5 {
@@ -1774,6 +1715,10 @@ body.open #mask {
     margin-bottom: 2rem;
   }
 
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -1790,14 +1735,6 @@ body.open #mask {
     margin-top: 200px;
   }
 
-  .lg\:mr-0 {
-    margin-right: 0px;
-  }
-
-  .lg\:ml-0 {
-    margin-left: 0px;
-  }
-
   .lg\:flex {
     display: flex;
   }
@@ -1808,6 +1745,10 @@ body.open #mask {
 
   .lg\:h-\[100px\] {
     height: 100px;
+  }
+
+  .lg\:h-\[110px\] {
+    height: 110px;
   }
 
   .lg\:h-\[160px\] {
@@ -1830,10 +1771,6 @@ body.open #mask {
     height: 790px;
   }
 
-  .lg\:h-\[110px\] {
-    height: 110px;
-  }
-
   .lg\:w-\[100px\] {
     width: 100px;
   }
@@ -1850,32 +1787,20 @@ body.open #mask {
     width: 255px;
   }
 
-  .lg\:w-\[390px\] {
-    width: 390px;
+  .lg\:w-\[340px\] {
+    width: 340px;
   }
 
-  .lg\:w-\[413px\] {
-    width: 413px;
+  .lg\:w-\[390px\] {
+    width: 390px;
   }
 
   .lg\:w-\[620px\] {
     width: 620px;
   }
 
-  .lg\:w-\[95px\] {
-    width: 95px;
-  }
-
-  .lg\:w-\[340px\] {
-    width: 340px;
-  }
-
   .lg\:max-w-\[1240px\] {
     max-width: 1240px;
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
   }
 
   .lg\:justify-between {
@@ -1890,12 +1815,6 @@ body.open #mask {
     --tw-space-x-reverse: 0;
     margin-right: calc(3rem * var(--tw-space-x-reverse));
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2rem * var(--tw-space-x-reverse));
-    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {

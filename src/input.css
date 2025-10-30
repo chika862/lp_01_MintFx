@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/*カスタムここから*/
+body {
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
+}
 
 .hero {
   background-image: url("../images/hero-bg.webp");
@@ -237,3 +241,4 @@ body.open #mask {
 .accordion-a-content p + p {
   margin-top: 20px;
 }
+/*カスタムここまで*/
