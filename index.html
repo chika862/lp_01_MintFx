@@ -125,7 +125,7 @@
       </div>
       <!-- PC用 -->
       <div
-        class="hidden lg:flex lg:absolute top-0 left-0 w-full backdrop-blur-sm z-50 h-15 items-center justify-between px-6"
+        class="hidden lg:flex lg:absolute top-0 left-0 w-full backdrop-blur-sm z-50 h-16 items-center justify-between px-6"
       >
         <h1 class="my-auto h-15">
           <img
@@ -267,8 +267,6 @@
               </div>
             </nav> -->
       </div>
-
-      <!-- PC用ここまで -->
     </header>
     <!-- ===============================
         contents
@@ -390,34 +388,44 @@
       <!-- ===============================
       MINT TRADINGの始め方
   =============================== -->
-      <section class="bg-accent text-white py-6">
-        <h2 class="text-center text-white font-bold text-2xl pt-2 pb-8">
+      <section class="bg-accent text-white py-6 lg:pb-20">
+        <h2
+          class="text-center text-white font-bold text-2xl pt-2 lg:pt-8 pb-8 lg:pb-14"
+        >
           最短1分で登録完了!!<br class="md:hidden" />MINT TRADINGの始め方
         </h2>
-        <div class="flex flex-col px-8 md:flex-row space-y-6 md:space-x-4">
+
+        <div
+          class="flex flex-col px-8 md:flex-row space-y-6 md:space-y-0 md:space-x-4 md:max-w-[1240px] md:mx-auto lg:px-0"
+        >
           <!-- STEP1 -->
-          <div class="step1 rounded-xl p-8">
+          <div class="step1 rounded-xl p-8 lg:p-6 lg:w-[390px] lg:h-[540px]">
             <p>STEP1</p>
-            <h3 class="font-semibold text-xl">フォーム入力</h3>
-            <div class="h-[100px]"></div>
+            <h3 class="font-semibold text-xl lg:text-3xl">フォーム入力</h3>
+            <div class="h-[100px] lg:h-[300px]"></div>
             <p>
               お申し込みフォームに必要な情報を入力するだけ!最短1分で口座開設が完了します。
             </p>
           </div>
+
           <!-- STEP2 -->
-          <div class="step2 rounded-xl p-8">
+          <div class="step2 rounded-xl p-8 lg:p-6 lg:w-[390px] lg:h-[540px]">
             <p>STEP2</p>
-            <h3 class="font-semibold text-xl">必要書類アップロード</h3>
-            <div class="h-[100px]"></div>
+            <h3 class="font-semibold text-xl lg:text-3xl">
+              必要書類アップロード
+            </h3>
+            <div class="h-[100px] lg:h-[300px]"></div>
+
             <p>
               送信が完了すると、登録内容の確認メールが送付されます。内容をご確認の上、問題なければ必要書類のデータご返送ください。
             </p>
           </div>
           <!-- STEP3 -->
-          <div class="step3 rounded-xl p-8">
+          <div class="step3 rounded-xl p-8 lg:p-6 lg:w-[390px] lg:h-[540px]">
             <p>STEP3</p>
-            <h3 class="font-semibold text-xl">口座開設完了</h3>
-            <div class="h-[100px]"></div>
+            <h3 class="font-semibold text-xl lg:text-3xl">口座開設完了</h3>
+            <div class="h-[100px] lg:h-[300px]"></div>
+
             <p>
               お申し込み内容および必要書類を弊社で確認後、口座開設手続きを行います。手続き完了後、メールにてご案内いたします。
             </p>
@@ -425,7 +433,7 @@
         </div>
         <a
           href="#"
-          class="relative flex bg-white text-accent mt-6 w-[300px] mx-auto font-bold rounded-xl p-4 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
+          class="relative flex bg-white text-accent mt-6 w-[300px] mx-auto font-bold rounded-xl p-4 lg:mt-20 justify-center items-center transition-transform duration-300 hover:-translate-y-1"
           >今すぐ口座開設(無料)<span
             class="absolute right-4 top-1/2 -translate-y-1/2"
             >></span
@@ -876,126 +884,151 @@
       フッター
   =============================== -->
     <footer class="bg-accent text-white p-5">
-      <div class="flex flex-col md:flex-row">
-        <img
-          src="images/logo.svg"
-          alt="MINT TRADINGのロゴ"
-          class="px-10 pt-10"
-        />
-        <div
-          class="flex flex-col md:flex-row w-1/2 mx-auto my-4 text-center space-y-1"
-        >
-          <a
-            href="mailto:support@minttrading.com"
-            class="underline underline-offset-4 decoration-white hover:text-blue-300 hover:decoration-blue-300"
-            >support@minttrading.com</a
+      <div
+        class="md:space-y-0 md:space-x-4 md:max-w-[1240px] md:mx-auto lg:px-0"
+      >
+        <div class="flex flex-col md:flex-row md:justify-between">
+          <img
+            src="images/logo.svg"
+            alt="MINT TRADINGのロゴ"
+            class="px-10 pt-10 md:px-0 md:w-[300px] md:pl-4"
+          />
+          <div
+            class="flex flex-col font-bold md:flex-row w-1/2 md:w-auto mx-auto my-4 md:pt-14 text-center space-y-1 md:space-y-0 md:space-x-10 md:mr-0"
           >
-          <a
-            href="tel:03-1234-5678"
-            class="underline underline-offset-4 decoration-white hover:text-blue-300 hover:decoration-blue-300"
-            >03-1234-5678</a
-          >
-        </div>
-      </div>
-      <div class="border-t border-white my-6"></div>
-      <div class="flex flex-col md:flex-row">
-        <div>
-          <h2 class="font-bold pb-2 text-sm">金融規制</h2>
-          <div class="flex text-xs">
-            <div class="border-r pr-4">
-              <p>ASIC</p>
-              <p>374409</p>
-            </div>
-            <div class="border-r px-4">
-              <p>CySEC</p>
-              <p>412/22</p>
-            </div>
-            <div class="border-r px-4">
-              <p>FSA</p>
-              <p>SD089</p>
-            </div>
-            <div class="border-r px-4">
-              <p>FSCA</p>
-              <p>53199</p>
-            </div>
-            <div class="pl-4">
-              <p>LFSA</p>
-              <p>MB/21/0081</p>
-            </div>
+            <a
+              href="mailto:support@minttrading.com"
+              class="underline underline-offset-4 decoration-white hover:text-blue-300 hover:decoration-blue-300 lg:text-sm"
+              >support@minttrading.com</a
+            >
+            <a
+              href="tel:03-1234-5678"
+              class="underline underline-offset-4 decoration-white hover:text-blue-300 hover:decoration-blue-300 lg:text-sm"
+              >03-1234-5678</a
+            >
           </div>
         </div>
+        <div class="border-t border-white my-6 md:pb-3 md:mt-3"></div>
+        <div class="flex flex-col md:flex-row md:justify-between md:pb-4">
+          <div>
+            <h2 class="font-bold pb-2 md:pb-4 text-sm">金融規制</h2>
+            <div class="flex text-xs">
+              <div class="border-r pr-4">
+                <p>ASIC</p>
+                <p>374409</p>
+              </div>
+              <div class="border-r px-4">
+                <p>CySEC</p>
+                <p>412/22</p>
+              </div>
+              <div class="border-r px-4">
+                <p>FSA</p>
+                <p>SD089</p>
+              </div>
+              <div class="border-r px-4">
+                <p>FSCA</p>
+                <p>53199</p>
+              </div>
+              <div class="pl-4">
+                <p>LFSA</p>
+                <p>MB/21/0081</p>
+              </div>
+            </div>
+          </div>
 
-        <div class="mt-4">
-          <h2 class="font-bold pb-2 text-sm">セキュリティ</h2>
-          <div class="flex space-x-2">
-            <img
-              src="images/footer/pci-dss.svg"
-              alt="pci DSS COMPLIANTのロゴ"
-              class="w-1/5"
-            />
-            <img
-              src="images/footer/mastercard.svg"
-              alt="MasterCard SecureCodeのロゴ"
-              class="w-1/5"
-            />
-            <img
-              src="images/footer/secure.svg"
-              alt="SECURE SSL ENCRYPTIONのロゴ"
-              class="w-1/5"
-            />
-            <img
-              src="images/footer/3d-secure.svg"
-              alt="3D SECUREのロゴ"
-              class="w-1/5"
-            />
+          <div class="mt-4 md:mt-0">
+            <h2 class="font-bold pb-2 text-sm">セキュリティ</h2>
+            <div class="flex space-x-2">
+              <img
+                src="images/footer/pci-dss.svg"
+                alt="pci DSS COMPLIANTのロゴ"
+                class="w-1/5 lg:w-[95px]"
+              />
+              <img
+                src="images/footer/mastercard.svg"
+                alt="MasterCard SecureCodeのロゴ"
+                class="w-1/5 lg:w-[95px]"
+              />
+              <img
+                src="images/footer/secure.svg"
+                alt="SECURE SSL ENCRYPTIONのロゴ"
+                class="w-1/5 lg:w-[95px]"
+              />
+              <img
+                src="images/footer/3d-secure.svg"
+                alt="3D SECUREのロゴ"
+                class="w-1/5 lg:w-[95px]"
+              />
+            </div>
           </div>
         </div>
-        <div class="border-t border-white my-6"></div>
-        <nav class="footer-nav text-xs">
-          <ul class="flex font-bold">
-            <div class="w-1/2 space-y-2">
-              <!-- 1段目 -->
-              <li class="w-full sm:w-auto"><a href="">トップページ</a></li>
-              <li class="w-full sm:w-auto">
-                会社概要
-                <ul class="pl-4 space-y-2 pt-2">
-                  <li><a href="">MINT TRADINGとは?</a></li>
-                  <li><a href="">ライセンス</a></li>
-                </ul>
-              </li>
-            </div>
-            <div class="w-1/2 space-y-2">
-              <!-- 2段目 -->
-              <li class="w-full sm:w-auto">
-                トレード
-                <ul class="pl-4 space-y-2 pt-2">
-                  <li><a href="">口座タイプ</a></li>
-                  <li><a href="">入出金方法</a></li>
-                  <li><a href="">プラットフォーム</a></li>
-                </ul>
-              </li>
-              <li class="w-full sm:w-auto"><a href="">アフィリエイト</a></li>
-              <li class="w-full sm:w-auto"><a href="">キャンペーン</a></li>
-            </div>
+        <div class="border-t border-white my-6 md:pb-3 md:mt-3"></div>
+        <nav class="footer-nav text-center lg:text-left lg:py-4">
+          <ul
+            class="flex flex-col md:flex-row font-bold space-y-3 lg:space-y-0 lg:space-x-12 text-[1rem]"
+          >
+            <li class=""><a href="">トップページ</a></li>
+            <li class="">
+              会社概要
+              <ul class="space-y-3">
+                <li class="pt-3 font-normal text-[0.9rem]">
+                  <a href="">MINT TRADINGとは?</a>
+                </li>
+                <li class="font-normal text-[0.9rem]">
+                  <a href="">ライセンス</a>
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              トレード
+              <ul class="space-y-3">
+                <li class="pt-3 font-normal text-[0.9rem]">
+                  <a href="">口座タイプ</a>
+                </li>
+                <li class="font-normal text-[0.9rem]">
+                  <a href="">入出金方法</a>
+                </li>
+                <li class="font-normal text-[0.9rem]">
+                  <a href="">プラットフォーム</a>
+                </li>
+              </ul>
+            </li>
+            <li class="w-full sm:w-auto"><a href="">アフィリエイト</a></li>
+            <li class="w-full sm:w-auto"><a href="">キャンペーン</a></li>
           </ul>
         </nav>
-        <div class="border-t border-white my-6"></div>
-        <div>
-          <p class="text-sm">
-            <span class="font-extrabold">リスクに関する警告</span>:
-            外国為替金取引やデリバティブ取引は高リスクを伴います。損失に耐えうる範囲の資金でお取引されることをお勧め致します。デリバティブ取引は全ての投資家に適しているわけではございません。取引に伴うリスクを充分に理解された上で、必要に応じて専門家にご相談ください。
-          </p>
-        </div>
-        <p class="text-sm mt-8">
-          <span class="font-extrabold">免責事項</span>:
-          XSは、現地の法律または規制に反する可能性がある国・地域において、金融サービスの勧誘とみなされるいかなる行為も行っておりません。
-        </p>
-        <p class="text-sm">
-          本ウェブサイト上の情報は、特定の国や地域に居住する方々を対象とするものではなく、投資助言、推奨、または金融サービスや投資活動への勧誘を構成するものではありません。<br />また、本ウェブサイトでは、ユーザーの利便性を向上させるために多言語翻訳機能を提供しています。<br />英語以外の言語への翻訳は、あくまで情報提供と利便性を目的としたものであり、特定の国や地域に居住する個人に対し、金融サービスを提供、推奨、または勧誘することを意図したものではありません。
-        </p>
-      </div>
 
-      <p class="mt-5 text-center">&copy; 2025 MINT TRADING</p>
+        <div class="border-t border-white my-6 md:pb-3 md:mt-3"></div>
+        <div
+          class="lg:flex lg:justify-between lg:max-w-[1240px] lg:mx-auto relative"
+        >
+          <!-- 左カラム -->
+          <div class="lg:w-[620px]">
+            <p class="text-sm lg:text-[0.78rem]">
+              <span class="font-extrabold">リスクに関する警告</span>:
+              外国為替金取引やデリバティブ取引は高リスクを伴います。損失に耐えうる範囲の資金でお取引されることをお勧め致します。デリバティブ取引は全ての投資家に適しているわけではございません。取引に伴うリスクを充分に理解された上で、必要に応じて専門家にご相談ください。
+            </p>
+            <p class="text-sm mt-8 lg:text-[0.78rem]">
+              <span class="font-extrabold">免責事項</span>:
+              XSは、現地の法律または規制に反する可能性がある国・地域において、金融サービスの勧誘とみなされるいかなる行為も行っておりません。
+            </p>
+            <p class="text-sm lg:text-[0.78rem]">
+              本ウェブサイト上の情報は、特定の国や地域に居住する方々を対象とするものではなく、投資助言、推奨、または金融サービスや投資活動への勧誘を構成するものではありません。<br />
+              また、本ウェブサイトでは、ユーザーの利便性を向上させるために多言語翻訳機能を提供しています。<br />
+              英語以外の言語への翻訳は、あくまで情報提供と利便性を目的としたものであり、特定の国や地域に居住する個人に対し、金融サービスを提供、推奨、または勧誘することを意図したものではありません。
+            </p>
+          </div>
+
+          <!-- 右カラム -->
+          <div class="lg:w-[620px] lg:relative">
+            <p
+              class="mt-5 text-center lg:text-right lg:absolute lg:bottom-0 lg:right-0 lg:mt-0"
+            >
+              &copy; 2025 MINT TRADING
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- nav mask-->
     <div id="mask"></div>
@@ -1056,79 +1089,6 @@
           });
         });
       });
-
-      // PCメニュー
-      // document.querySelectorAll(".accordion").forEach((accordion) => {
-      //   const props = {
-      //     isAnimating: false,
-      //     slideDuration: 400,
-      //     slideEasing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
-      //   };
-
-      //   function answerShow(li) {
-      //     props.isAnimating = true;
-      //     li.classList.add("is-open");
-
-      //     const answer = li.querySelector(".accordion-a");
-      //     answer.style.display = "block";
-      //     const startHeight = 0;
-      //     const endHeight = answer.scrollHeight;
-
-      //     answer.animate(
-      //       [{ height: `${startHeight}px` }, { height: `${endHeight}px` }],
-      //       {
-      //         duration: props.slideDuration,
-      //         easing: props.slideEasing,
-      //       }
-      //     ).onfinish = () => {
-      //       answer.style.height = "";
-      //       props.isAnimating = false;
-      //     };
-      //   }
-
-      //   function answerHide(li) {
-      //     props.isAnimating = true;
-      //     li.classList.remove("is-open");
-
-      //     const answer = li.querySelector(".accordion-a");
-
-      //     const startHeight = answer.scrollHeight;
-      //     const endHeight = 0;
-
-      //     answer.animate(
-      //       [{ height: `${startHeight}px` }, { height: `${endHeight}px` }],
-      //       {
-      //         duration: props.slideDuration,
-      //         easing: props.slideEasing,
-      //       }
-      //     ).onfinish = () => {
-      //       answer.style.display = "";
-      //       answer.style.height = "";
-      //       props.isAnimating = false;
-      //     };
-      //   }
-
-      //   const firstLi = accordion.querySelectorAll("li")[0];
-      //   firstLi.classList.add("is-open");
-
-      //   const answer = firstLi.querySelector(".accordion-a");
-      //   answer.style.display = "block";
-
-      //   accordion.querySelectorAll("li").forEach((li) => {
-      //     li.querySelector(".accordion-q button").addEventListener(
-      //       "click",
-      //       () => {
-      //         if (!props.isAnimating) {
-      //           if (!li.classList.contains("is-open")) {
-      //             answerShow(li);
-      //           } else {
-      //             answerHide(li);
-      //           }
-      //         }
-      //       }
-      //     );
-      //   });
-      // });
     </script>
   </body>
 </html>
