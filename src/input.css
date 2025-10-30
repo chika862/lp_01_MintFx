@@ -113,15 +113,14 @@ body.open .header-nav {
   transition-duration: 0.2s;
 }
 .header-nav .inner ul li a:hover {
-  background: #f0f0f0;
+  background: #1d8382;
+  color: #ffffff;
 }
 
 .list-text {
   color: #333333;
 }
-.list-text:hover {
-  background: #f0f0f0;
-}
+
 @media screen and (max-width: 767px) {
   .header-nav {
     left: -220px;
