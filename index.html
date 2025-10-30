@@ -25,11 +25,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./dist/output.css" />
-    <title>Document</title>
-    <meta name="description" content="仮仮仮めたでぃすくりぷしょんです仮仮仮" />
-    <meta name="keywords" content="必要であれば" />
+    <title>MINT TRADING</title>
+    <meta name="description" content="仮仮仮メタディスクリプション仮仮仮" />
+    <meta name="keywords" content="仮仮仮メタキーワード仮仮仮" />
   </head>
   <body class="font-noto">
     <!-- ===============================
@@ -766,12 +765,12 @@
           >
             <a
               href="mailto:support@minttrading.com"
-              class="underline underline-offset-4 decoration-white hover:text-blue-300 hover:decoration-blue-300 lg:text-sm"
+              class="underline underline-offset-4 decoration-white hover:text-blue-200 hover:decoration-blue-300 lg:text-sm"
               >support@minttrading.com</a
             >
             <a
               href="tel:03-1234-5678"
-              class="underline underline-offset-4 decoration-white hover:text-blue-300 hover:decoration-blue-300 lg:text-sm"
+              class="underline underline-offset-4 decoration-white hover:text-blue-200 hover:decoration-blue-300 lg:text-sm"
               >03-1234-5678</a
             >
           </div>
@@ -782,34 +781,40 @@
           <ul
             class="flex flex-col md:flex-row font-bold space-y-3 lg:space-y-0 lg:space-x-12 text-[1rem]"
           >
-            <li class=""><a href="">トップページ</a></li>
-            <li class="">
+            <li>
+              <a href="" class="hover:text-blue-200">トップページ</a>
+            </li>
+            <li>
               会社概要
               <ul class="space-y-3">
                 <li class="pt-3 font-normal text-[0.9rem]">
-                  <a href="">MINT TRADINGとは?</a>
+                  <a href="" class="hover:text-blue-200">MINT TRADINGとは?</a>
                 </li>
                 <li class="font-normal text-[0.9rem]">
-                  <a href="">ライセンス</a>
+                  <a href="" class="hover:text-blue-200">ライセンス</a>
                 </li>
               </ul>
             </li>
-            <li class="">
+            <li>
               トレード
               <ul class="space-y-3">
                 <li class="pt-3 font-normal text-[0.9rem]">
-                  <a href="">口座タイプ</a>
+                  <a href="" class="hover:text-blue-200">口座タイプ</a>
                 </li>
                 <li class="font-normal text-[0.9rem]">
-                  <a href="">入出金方法</a>
+                  <a href="" class="hover:text-blue-200">入出金方法</a>
                 </li>
                 <li class="font-normal text-[0.9rem]">
-                  <a href="">プラットフォーム</a>
+                  <a href="" class="hover:text-blue-200">プラットフォーム</a>
                 </li>
               </ul>
             </li>
-            <li class="w-full sm:w-auto"><a href="">アフィリエイト</a></li>
-            <li class="w-full sm:w-auto"><a href="">キャンペーン</a></li>
+            <li class="w-full sm:w-auto">
+              <a href="" class="hover:text-blue-200">アフィリエイト</a>
+            </li>
+            <li class="w-full sm:w-auto">
+              <a href="" class="hover:text-blue-200">キャンペーン</a>
+            </li>
           </ul>
         </nav>
 
@@ -848,60 +853,8 @@
     <!-- ===============================
       JS
   =============================== -->
-    <script>
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-          type: "bullets",
-          clickable: true,
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const body = document.body;
-        const nav = document.getElementById("navArea");
-        const btn = document.querySelector(".toggle_btn");
-        const mask = document.getElementById("mask");
-        const openClass = "open";
-
-        // メインメニュー開閉
-        btn.addEventListener("click", () => {
-          body.classList.toggle(openClass);
-        });
-        mask.addEventListener("click", () => {
-          body.classList.remove(openClass);
-        });
-
-        // 下層メニュー（アコーディオン）
-        const submenuBtns = document.querySelectorAll(".submenu-btn");
-
-        submenuBtns.forEach((btn) => {
-          btn.addEventListener("click", () => {
-            const submenu = btn.nextElementSibling;
-            const icon = btn.querySelector("i");
-
-            if (submenu.style.maxHeight) {
-              submenu.style.maxHeight = null;
-              icon.classList.remove("rotate-180");
-            } else {
-              submenu.style.maxHeight = submenu.scrollHeight + "px";
-              icon.classList.add("rotate-180");
-            }
-          });
-        });
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
