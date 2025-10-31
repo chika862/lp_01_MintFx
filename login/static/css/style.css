@@ -1,0 +1,1339 @@
+/* ============================================= */
+/* FV & Header                                     */
+/* ============================================= */
+.header {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  width: auto;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  width: 200px;
+}
+
+.fv-container {
+  background-image: url(../img/header_bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-align: left;
+}
+
+.fv-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.fv-container .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.fv-content {
+    padding-top: 15vh;
+}
+
+.fv-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.fv-content p {
+  font-size: 16px;
+  margin-top: 16px;
+  line-height: 1.8;
+  max-width: 480px;
+}
+
+/* ============================================= */
+/* Global Navigation                             */
+/* ============================================= */
+.g-nav {
+  background-color: transparent;
+  box-shadow: none;
+}
+.g-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.g-nav li {
+  margin-bottom: 12px;
+}
+.g-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+.g-nav .has-submenu > a {
+  padding-right: 20px;
+}
+.g-nav .has-submenu > a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: translateY(-50%) rotate(-135deg);
+  transition: transform 0.3s ease;
+}
+.g-nav .submenu-open > a::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+.g-nav .submenu {
+  display: none;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.g-nav .submenu li {
+  margin-bottom: 10px;
+}
+.g-nav .submenu a {
+  font-size: 14px;
+}
+
+
+/* ============================================= */
+/* Main Contents                                 */
+/* ============================================= */
+main {
+  color: #333;
+  text-align: left;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.section-text {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* ============================================= */
+/* Utility Classes                               */
+/* ============================================= */
+.text-center {
+    text-align: center !important;
+}
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+
+/* ============================================= */
+/* Regulation Section (license.html)             */
+/* ============================================= */
+.regulation-section {
+  padding: 80px 0;
+}
+
+/* ============================================= */
+/* License Section (license.html)                */
+/* ============================================= */
+.license-section {
+  padding: 80px 0;
+  background-color: #f7f7f7;
+}
+
+.license-intro {
+  margin-bottom: 60px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.license-intro p {
+    margin-bottom: 1em;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 40px;
+}
+
+.company-card img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.company-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    color: #1D8382;
+}
+
+.company-card p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 1em;
+}
+
+/* ============================================= */
+/* Steps Section (license.html, platform.html)   */
+/* ============================================= */
+.steps-section {
+  padding: 80px 0;
+}
+.steps-section .section-title {
+    text-align: center;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.step-card {
+    height: 520px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.step-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.step-card-content {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+}
+
+.step-card-content span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.step-card-content h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.step-card.step-1 {
+  background-image: url(../img/step_1_bg.png);
+}
+.step-card.step-2 {
+  background-image: url(../img/step_2_bg.png);
+}
+.step-card.step-3 {
+  background-image: url(../img/step_3_bg.png);
+}
+
+.step-description {
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  margin-top: 0;
+}
+
+/* ============================================= */
+/* Methods Section (deposit-withdrawal.html)     */
+/* ============================================= */
+.methods-section {
+  padding: 80px 0;
+  background-color: #f7f7f7;
+}
+
+.methods-section .section-title {
+  text-align: left;
+  margin-bottom: 24px;
+}
+.methods-section .section-title:not(:first-child) {
+    margin-top: 60px;
+}
+
+.method-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.method-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e9e9e9;
+}
+.method-row:last-child {
+  border-bottom: none;
+}
+
+.method-col {
+  padding: 20px;
+  flex: 1;
+  font-size: 14px;
+}
+.method-col:nth-child(1) { flex-basis: 18%; font-weight: 600; }
+.method-col:nth-child(2) { flex-basis: 15%; }
+.method-col:nth-child(3) { flex-basis: 15%; }
+.method-col:nth-child(4) { flex-basis: 15%; }
+.method-col:nth-child(5) { flex-basis: 22%; line-height: 1.6; }
+.method-col:nth-child(6) { flex-basis: 15%; text-align: right; }
+
+.method-label, .method-value {
+    display: none;
+}
+
+.method-header {
+  background-color: #fff;
+  font-weight: 600;
+  color: #1D8382;
+  font-size: 16px;
+}
+
+.btn-action {
+  border: 1px solid #1D8382;
+  color: #1D8382;
+  padding: 8px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+.btn-action:hover {
+  background-color: #1D8382;
+  color: #fff;
+}
+
+.methods-note {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* ============================================= */
+/* FAQ Section (deposit-withdrawal.html)         */
+/* ============================================= */
+.faq-section {
+  padding: 80px 0;
+}
+.faq-section .section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.faq-grid .faq-item:nth-child(3) {
+    grid-column: 1 / -1;
+}
+
+.faq-item {
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  padding: 30px;
+}
+.faq-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.faq-item p,
+.faq-item li {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 1em;
+}
+.faq-item ul,
+.faq-item ol {
+  padding-left: 20px;
+}
+.faq-item ol {
+  list-style-type: decimal;
+}
+.faq-item ul {
+    list-style-type: disc;
+}
+
+/* ============================================= */
+/* Platform Choice Section (platform.html)       */
+/* ============================================= */
+.platform-choice-section {
+  padding: 80px 0;
+  background-color: #F7F7F7;
+}
+
+.platform-choice-section .section-title {
+    margin-bottom: 40px;
+}
+
+.platform-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.platform-card {
+  border-radius: 20px;
+  padding: 40px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.platform-card-mt4 {
+  background-color: #40ae9c;
+}
+.platform-card-mt5 {
+  background-color: #1a428a;
+}
+
+.platform-card-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.platform-icon-wrapper {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.platform-icon-wrapper img {
+    width: 80px;
+    height: auto;
+}
+
+.platform-card-content h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.platform-card-content p {
+  font-size: 14px;
+  margin-top: 12px;
+  line-height: 1.8;
+}
+
+.btn-platform {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #fff;
+  position: relative;
+}
+.platform-card-mt5 .btn-platform::after {
+    content: '›';
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+}
+.btn-platform-disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+.btn-platform-disabled::before,
+.btn-platform-disabled::after {
+    content: '×';
+    margin: 0 8px;
+}
+
+/* ============================================= */
+/* Reasons to Trade Section (platform.html)      */
+/* ============================================= */
+.reasons-section {
+  padding: 80px 0;
+}
+.reasons-section .section-title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+.reason-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 30px;
+}
+.reason-item img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.reason-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.reason-item p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+  line-height: 1.8;
+}
+
+/* ============================================= */
+/* Affiliate Program Section (affiliate.html)    */
+/* ============================================= */
+.affiliate-program-section {
+    padding: 80px 0;
+}
+.affiliate-program-section .section-text {
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 30px;
+}
+.program-item {
+    text-align: center;
+}
+.program-item img {
+    height: 60px;
+    margin-bottom: 40px;
+}
+.program-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1D8382;
+}
+.program-item p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+    line-height: 1.8;
+}
+
+/* ============================================= */
+/* Registration Section (affiliate.html)         */
+/* ============================================= */
+.registration-section {
+    padding: 80px 0;
+    background-color: #f7f7f7;
+}
+.registration-section .section-title {
+    margin-bottom: 60px;
+}
+.registration-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* カード全体のスタイル */
+.registration-item {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+/* 画像部分のスタイル */
+.registration-card {
+    position: relative;
+    color: #fff;
+}
+.registration-card img {
+    width: 100%;
+    display: block;
+}
+
+/* 画像上のテキスト */
+.registration-content {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.registration-content span {
+    font-size: 16px;
+    font-weight: 600;
+}
+.registration-content h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* 下部のテキストエリアのスタイル */
+.registration-item > p {
+    padding: 30px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* ============================================= */
+/* Join Section (affiliate.html)                 */
+/* ============================================= */
+.join-section {
+    padding: 80px 0;
+    background-color: #F4F4F6;
+}
+.join-section .section-title {
+    margin-bottom: 40px;
+}
+.btn-join {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #1D8382;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+.btn-join:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
+
+/* ============================================= */
+/* Responsive Styles (max-width: 992px)          */
+/* ============================================= */
+@media screen and (max-width: 992px) {
+  /* Common */
+  .company-grid,
+  .steps-grid,
+  .platform-grid,
+  .registration-grid {
+    grid-template-columns: 1fr;
+  }
+  .reason-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .program-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Header & Hamburger Menu */
+  .header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    align-items: center;
+  }
+  
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 200;
+  }
+  .hamburger__line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.4s;
+  }
+  .hamburger__line--1 { top: 0; }
+  .hamburger__line--2 { top: 50%; transform: translateY(-50%); }
+  .hamburger__line--3 { bottom: 0; }
+
+  .g-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 80px 30px 30px;
+    transition: right 0.5s;
+    overflow-y: auto;
+  }
+  .g-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .g-nav li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  .g-nav a {
+    display: block;
+    padding: 15px 0;
+  }
+  .g-nav .submenu {
+    padding-left: 20px;
+    padding-top: 0;
+  }
+   .g-nav .submenu a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+   }
+
+  /* Menu Open Animation */
+  body.nav-open .hamburger__line--1 {
+    transform: translateY(10.5px) rotate(45deg);
+  }
+  body.nav-open .hamburger__line--2 {
+    opacity: 0;
+  }
+  body.nav-open .hamburger__line--3 {
+    transform: translateY(-10.5px) rotate(-45deg);
+  }
+  body.nav-open .g-nav {
+    right: 0;
+  }
+
+  /* Methods Table */
+  .method-header {
+    display: none;
+  }
+  .method-row {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+  }
+
+  .method-col {
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px dashed #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .method-col:not(:last-child) {
+      font-size: 0;
+  }
+  .method-col:last-child {
+    border-bottom: none;
+    padding-top: 20px;
+  }
+  
+  .method-label, .method-value {
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .method-label {
+    font-weight: 600;
+    color: #1D8382;
+  }
+  
+  .method-value {
+    text-align: right;
+  }
+
+  .method-col:nth-child(6) {
+    justify-content: center;
+  }
+
+  /* FAQ Section */
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .reason-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .platform-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 576px) {
+  .reason-grid,
+  .program-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================= */
+/* Campaign Section (campaign.html)              */
+/* ============================================= */
+.campaign-section {
+    padding: 80px 0;
+    background-color: #F7F7F7;
+    min-height: 50vh; /* コンテンツが少ないため最小の高さを確保 */
+}
+.bonus-card {
+    max-width: 400px;
+    text-align: left;
+}
+.bonus-card img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.bonus-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #008482;
+}
+.bonus-card p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 16px;
+}
+.btn-details {
+    display: inline-block;
+    border: 1px solid #333;
+    color: #333;
+    padding: 10px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 24px;
+    transition: all 0.3s;
+}
+.btn-details:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* ============================================= */
+/* Welcome Bonus Section (campaign-detail.html)  */
+/* ============================================= */
+.welcome-bonus-section {
+    padding: 80px 0;
+}
+.welcome-bonus-section .section-text {
+    max-width: 800px;
+}
+
+/* ============================================= */
+/* Participation Method Section (campaign-detail.html) */
+/* ============================================= */
+.participation-method-section {
+    padding: 80px 0;
+    background-color: #f7f7f7;
+}
+.participation-method-section .section-title {
+    margin-bottom: 60px;
+}
+.participation-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+.participation-step {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    flex-basis: calc(33.333% - 20px);
+    max-width: 350px;
+    position: relative;
+    padding-bottom: 40px; /* テキストのためのスペース */
+}
+.participation-step img {
+    width: 100%;
+}
+.participation-step span {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+.participation-step h3 {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+.participation-step p {
+    padding: 20px 20px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.btn-primary-solid {
+    display: inline-block;
+    background-color: #1D8382;
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+.btn-primary-solid:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+/* ============================================= */
+/* Terms & Conditions Section (campaign-detail.html) */
+/* ============================================= */
+.terms-conditions-section {
+    padding: 80px 0;
+}
+.terms-block {
+    margin-bottom: 60px;
+}
+.terms-block:last-child {
+    margin-bottom: 0;
+}
+.terms-block h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.terms-block > p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+.terms-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.term-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 30px;
+}
+.term-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.term-card p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.terms-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.terms-list li {
+    font-size: 14px;
+    line-height: 1.8;
+    padding-left: 1.2em;
+    position: relative;
+    margin-bottom: 0.8em;
+}
+.terms-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #1D8382;
+}
+
+/* ============================================= */
+/* Additional Responsive Styles                  */
+/* ============================================= */
+@media screen and (max-width: 992px) {
+    .participation-step {
+        flex-basis: calc(50% - 15px);
+    }
+}
+@media screen and (max-width: 768px) {
+    .terms-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 576px) {
+    .participation-step {
+        flex-basis: 100%;
+    }
+}
+
+/* ============================================= */
+/* Open Account Section (open-account.html)      */
+/* ============================================= */
+.open-account-section {
+    padding: 80px 0;
+}
+.open-account-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+    /* background-color: #fff; */
+    padding: 60px;
+    border-radius: 20px;
+    /* box-shadow: 0 10px 40px rgba(0,0,0,0.08); */
+}
+.open-account-img img {
+    width: 100%;
+    border-radius: 15px;
+}
+.open-account-form h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.form-group {
+    margin-bottom: 20px; /* 少し余白を広げます */
+}
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1D8382;
+    margin-bottom: 8px;
+}
+.form-group-name {
+    display: flex;
+    gap: 15px;
+}
+.form-group-name > div {
+    flex: 1;
+}
+
+/* プレースホルダーの色を灰色に */
+.form-group input::placeholder {
+    color: #aaa;
+}
+.form-group input, .form-group select {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+/* プルダウンメニューの初期状態を灰色に */
+.form-group select:required:invalid {
+    color: #aaa;
+}
+option[value=""][disabled] {
+    display: none;
+}
+option {
+    color: #333;
+}
+
+
+.btn-submit {
+    width: 100%;
+    background-color: #1D8382;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    margin-top: 15px;
+    position: relative;
+    text-align: center;
+}
+.btn-submit:hover {
+    opacity: 0.8;
+}
+.btn-submit::after {
+    content: '›';
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+}
+.login-prompt {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.login-prompt a {
+    color: #1D8382;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.geen_color {
+  color: #008482;
+}
+
+
+/* ============================================= */
+/* Additional Responsive Styles                  */
+/* ============================================= */
+@media screen and (max-width: 992px) {
+    .open-account-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .open-account-form h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 54px;
+}
+    
+}
+@media screen and (max-width: 768px) {
+    .open-account-grid {
+        padding: 0px;
+    }
+    .form-group-name {
+        flex-direction: column;
+    }
+
+    .open-account-form h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 54px;
+}
+}
+
+/* ============================================= */
+/* Utility Classes                               */
+/* ============================================= */
+.text-center {
+    text-align: center !important;
+}
+
+/* ▼▼▼ ここから追加 ▼▼▼ */
+/* PCでは非表示 */
+.sp-only {
+    display: none;
+}
+/* ▲▲▲ ここまで追加 ▲▲▲ */
+
+
+/* ============================================= */
+/* Responsive Styles (max-width: 992px)          */
+/* ============================================= */
+@media screen and (max-width: 992px) {
+    /* ...既存のスタイル... */
+
+    /* ▼▼▼ ここから追加 ▼▼▼ */
+    /* SPでは表示（改行として機能させる） */
+    .sp-only {
+        display: block;
+    }
+    /* ▲▲▲ ここまで追加 ▲▲▲ */
+}
+
+/* ============================================= */
+/* Completion Section (register-complete.html)   */
+/* ============================================= */
+.completion-section {
+    padding: 120px 0;
+    background-color: #F7F7F7;
+    min-height: 50vh; /* コンテンツが少ないため最小の高さを確保 */
+}
+.completion-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.completion-content img {
+    height: 60px;
+    margin-bottom: 30px;
+}
+.completion-content h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.completion-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* ============================================= */
+/* Contact Section (contact.html)                */
+/* ============================================= */
+.contact-section {
+    padding: 80px 0;
+    /* background-color: #F7F7F7; */
+}
+.contact-form-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+.contact-form-wrapper h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* ▼▼▼ ここからが修正箇所です ▼▼▼ */
+.radio-group {
+    /* Flexboxは使わず、シンプルなブロック要素として扱います */
+}
+.radio-group div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* 各項目の下に余白を追加 */
+}
+.radio-group div:last-child {
+    margin-bottom: 0;
+}
+/* ▲▲▲ ここまでが修正箇所です ▲▲▲ */
+
+.radio-group input[type="radio"] {
+    margin-right: 8px;
+}
+.radio-group label {
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 0;
+}
+.form-group label {
+    color: #008482;
+    font-weight: bold;
+}
+.contact-form-wrapper {
+    color: #333;
+    font-weight: bold;
+}
+.contact-form-wrapper textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.contact-form-wrapper .btn-submit::after {
+    content: ''; /* 矢印を削除 */
+}
+
+.black_color {
+  color: #666;
+}
+
+.radiobottom {
+  width: 5%!important;
+}
+
+
+/* ============================================= */
+/* Login Section (login.html)                    */
+/* ============================================= */
+.login-section {
+    padding: 80px 0;
+    background-color: white;
+}
+.login-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: center; */
+    gap: 60px;
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 20px;
+    /* box-shadow: 0 10px 40px rgba(0,0,0,0.08); */
+}
+.login-img img {
+    width: 100%;
+    border-radius: 15px;
+}
+.login-form h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-top: 50px;
+    /* text-align: center; */
+}
+.forgot-password {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.forgot-password a {
+    color: #1D8382;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* ============================================= */
+/* Additional Responsive Styles                  */
+/* ============================================= */
+@media screen and (max-width: 992px) {
+    .login-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 768px) {
+    .login-grid {
+        padding: 30px;
+    }
+}
+
+
+
+
+
+
+
+
