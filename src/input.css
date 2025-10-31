@@ -36,22 +36,6 @@ body {
   }
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  color: white;
-  width: 20px;
-  height: 20px;
-  background-size: 50% auto;
-}
-.swiper-pagination-bullet {
-  background-color: gray;
-  opacity: 0.5;
-}
-.swiper-pagination-bullet-active {
-  background-color: white;
-  opacity: 1;
-}
-
 /* スマホ向け */
 @media (max-width: 639px) {
   .hero {
@@ -245,7 +229,9 @@ body.open #mask {
 /*about page*/
 .about-hero {
   background-image: url("../images/about/bg.webp");
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .about-step1 {
@@ -280,8 +266,49 @@ body.open #mask {
 }
 
 /* swiper*/
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  width: 20px;
+  height: 20px;
+  background-size: 50% auto;
+}
+.swiper-pagination-bullet {
+  background-color: gray;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  background-color: white;
+  opacity: 1;
+}
+/* Aboutページのスライダー設定 */
+#about-page-slider {
+  height: 450px; /* スライダーの高さを固定 */
+  overflow: visible; /* 2.5枚表示のため、はみ出しを許可 */
+  padding: 0 40px; /* 左右のナビゲーションを配置するための余白 */
+}
 
-.swiper-controls .swiper-button-prev,
+.about-swiper-slide .slide-bg img {
+  opacity: 0.8;
+}
+
+.about-swiper-slide {
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: grab;
+  height: 100%;
+}
+.about-swiper-slide .slide-content-wrapper {
+  z-index: 10;
+}
+
+/* PCでのナビゲーションボタンの位置調整 */
+@media (min-width: 1024px) {
+  #about-page-slider {
+    padding: 0 60px;
+  }
+}
+/* .swiper-controls .swiper-button-prev,
 .swiper-controls .swiper-button-next {
   position: static !important;
   margin: 0 !important;
@@ -301,11 +328,11 @@ body.open #mask {
   color: #fff !important;
 }
 
-/* ページネーションのバレットの位置調整（必要な場合） */
 .swiper-controls .swiper-pagination {
   position: relative !important;
   width: auto !important;
   top: auto !important;
   left: auto !important;
-}
+} */
+
 /*カスタムここまで*/
