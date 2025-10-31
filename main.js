@@ -63,17 +63,31 @@ document.addEventListener("DOMContentLoaded", () => {
 // ------------------------------------
 // 🔹 Swiper
 // ------------------------------------
+// const swiper = new Swiper(".swiper", {
+//   direction: "horizontal",
+//   loop: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     type: "bullets",
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
+
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination", // ページネーションの要素はそのまま
     type: "bullets",
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next", // 次へボタンの要素はそのまま
+    prevEl: ".swiper-button-prev", // 前へボタンの要素はそのまま
   },
 });
 

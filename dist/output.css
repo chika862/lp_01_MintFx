@@ -592,12 +592,20 @@ video {
   pointer-events: none;
 }
 
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
 .visible {
   visibility: visible;
 }
 
 .invisible {
   visibility: hidden;
+}
+
+.\!static {
+  position: static !important;
 }
 
 .static {
@@ -618,6 +626,10 @@ video {
 
 .sticky {
   position: sticky;
+}
+
+.inset-0 {
+  inset: 0px;
 }
 
 .left-0 {
@@ -646,6 +658,14 @@ video {
 
 .top-8 {
   top: 2rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.right-10 {
+  right: 2.5rem;
 }
 
 .z-50 {
@@ -1148,6 +1168,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-\[0\.9rem\] {
   font-size: 0.9rem;
 }
@@ -1533,6 +1558,8 @@ body.open #mask {
   transform: translate(0, 0);
   transition: none;
 }
+
+/* swiper*/
 
 /*カスタムここまで*/
 
