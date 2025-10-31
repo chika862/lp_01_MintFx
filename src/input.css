@@ -242,6 +242,32 @@ body.open #mask {
   margin-top: 20px;
 }
 
+/*about page*/
+.about-hero {
+  background-image: url("../images/about/bg.webp");
+  object-fit: cover;
+}
+
+.about-step1 {
+  background-image: url("../images/about/step/1.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about-step2 {
+  background-image: url("../images/about/step/2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about-step3 {
+  background-image: url("../images/about/step/3.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* about page end*/
 /* fade*/
 
 .fade,
@@ -255,4 +281,31 @@ body.open #mask {
 
 /* swiper*/
 
+.swiper-controls .swiper-button-prev,
+.swiper-controls .swiper-button-next {
+  position: static !important;
+  margin: 0 !important;
+
+  width: 20px !important;
+  height: 20px !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.swiper-controls .swiper-button-prev::after,
+.swiper-controls .swiper-button-next::after {
+  font-size: 20px !important;
+
+  color: #fff !important;
+}
+
+/* ページネーションのバレットの位置調整（必要な場合） */
+.swiper-controls .swiper-pagination {
+  position: relative !important;
+  width: auto !important;
+  top: auto !important;
+  left: auto !important;
+}
 /*カスタムここまで*/
