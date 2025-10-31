@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             class="px-10 pt-10 md:px-0 md:w-[300px] md:pl-4"
           />
           <div
-            class="flex flex-col font-bold md:flex-row w-1/2 md:w-auto mx-auto my-4 md:pt-14 text-center space-y-1 md:space-y-0 md:space-x-10 md:mr-0"
+            class="flex flex-col  font-bold md:flex-row w-1/2 md:w-auto mx-auto my-4 md:pt-14 text-center space-y-1 md:space-y-0 md:space-x-10 md:mr-0"
           >
             <a
               href="mailto:support@minttrading.com"
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <div class="border-t border-white my-6 md:pb-3 md:mt-3"></div>
         <div class="lg:flex lg:justify-between lg:max-w-[1240px] lg:mx-auto relative">
-          <div class="lg:w-[620px]">
+          <div class="lg:w-[620px] text-left">
             <p class="text-sm lg:text-[0.78rem]">
               <span class="font-extrabold">リスクに関する警告</span>:
               外国為替金取引やデリバティブ取引は高リスクを伴います。損失に耐えうる範囲の資金でお取引されることをお勧め致します。デリバティブ取引は全ての投資家に適しているわけではございません。取引に伴うリスクを充分に理解された上で、必要に応じて専門家にご相談ください。
