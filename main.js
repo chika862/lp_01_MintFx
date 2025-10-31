@@ -1,49 +1,105 @@
-//Motion
-const { animate, scroll } = Motion;
+const { animate, inView } = Motion;
 
-// swiper
+// ------------------------------------
+// 🔹 通常フェード（fade）
+// ------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".fade").forEach((el) => {
+    inView(el, () => {
+      animate(
+        el,
+        { opacity: [0, 1], y: [20, 0] },
+        { duration: 1, easing: "ease-out" }
+      );
+    });
+  });
+});
+
+// ------------------------------------
+// 🔹 ゆっくりフェード（fade-slow）
+// ------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".fade-slow").forEach((el) => {
+    inView(el, () => {
+      animate(
+        el,
+        { opacity: [0, 1], y: [40, 0] },
+        { duration: 2.5, easing: "ease-out", delay: 1 }
+      );
+    });
+  });
+});
+
+// ------------------------------------
+// 🔹 左からフェードイン（fade-left）
+// ------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".fade-left").forEach((el) => {
+    inView(el, () => {
+      animate(
+        el,
+        { opacity: [0, 1], x: [-40, 0] },
+        { duration: 1.2, easing: "ease-out" }
+      );
+    });
+  });
+});
+
+// ------------------------------------
+// 🔹 右からフェードイン（fade-right）
+// ------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".fade-right").forEach((el) => {
+    inView(el, () => {
+      animate(
+        el,
+        { opacity: [0, 1], x: [40, 0] },
+        { duration: 1.2, easing: "ease-out" }
+      );
+    });
+  });
+});
+
+// ------------------------------------
+// 🔹 Swiper
+// ------------------------------------
 const swiper = new Swiper(".swiper", {
-  // Optional parameters
   direction: "horizontal",
   loop: true,
-
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
     clickable: true,
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 });
 
-// ハンバーガーメニュー
+// ------------------------------------
+// 🔹 ハンバーガーメニュー
+// ------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
-  const nav = document.getElementById("navArea");
   const btn = document.querySelector(".toggle_btn");
   const mask = document.getElementById("mask");
   const openClass = "open";
 
-  // メインメニュー開閉
   btn.addEventListener("click", () => {
     body.classList.toggle(openClass);
   });
+
   mask.addEventListener("click", () => {
     body.classList.remove(openClass);
   });
 
   // 下層メニュー（アコーディオン）
   const submenuBtns = document.querySelectorAll(".submenu-btn");
-
   submenuBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const submenu = btn.nextElementSibling;
       const icon = btn.querySelector("i");
-
       if (submenu.style.maxHeight) {
         submenu.style.maxHeight = null;
         icon.classList.remove("rotate-180");

@@ -241,4 +241,16 @@ body.open #mask {
 .accordion-a-content p + p {
   margin-top: 20px;
 }
+
+/* fade*/
+
+.fade,
+.fade-slow,
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: none;
+}
+
 /*カスタムここまで*/
